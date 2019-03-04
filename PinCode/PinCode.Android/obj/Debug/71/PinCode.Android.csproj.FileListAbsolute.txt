@@ -1,0 +1,5 @@
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\71\MonoAndroid,Version=v7.1.AssemblyAttributes.cs
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\71\PinCode.Android.nuget.stamp
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\71\PinCode.Android.csprojAssemblyReference.cache
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\71\libraryimports.cache.stamp
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\71\res.flag

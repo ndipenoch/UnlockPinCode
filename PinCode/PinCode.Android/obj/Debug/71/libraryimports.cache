@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <ManifestDocuments>
+    <ManifestDocument>obj\Debug\71\lp\17\jl\AndroidManifest.xml</ManifestDocument>
+    <ManifestDocument>obj\Debug\71\lp\18\jl\AndroidManifest.xml</ManifestDocument>
+  </ManifestDocuments>
+  <NativeLibraries />
+  <Jars>
+    <Jar>obj\Debug\71\lp\0\jl\formsviewgroup.jar</Jar>
+    <Jar>obj\Debug\71\lp\16\jl\support-annotations.jar</Jar>
+    <Jar>obj\Debug\71\lp\17\jl\bin\classes.jar</Jar>
+    <Jar>obj\Debug\71\lp\18\jl\bin\classes.jar</Jar>
+  </Jars>
+</Paths>
