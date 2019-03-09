@@ -83,7 +83,7 @@ namespace PinCode
             if (FoundpWord == true)
             {
                 // System.Diagnostics.Debug.WriteLine("Your are login");
-                Navigation.PushAsync(new MyAccount());
+                Navigation.PushAsync(new MyAccount(username.Text));
             }
             if (foundUserName==true && FoundpWord == false)
             {
@@ -102,6 +102,7 @@ namespace PinCode
             {
                 await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
                 Navigation.PushAsync(new MainPage());
+            
             }
 
             FoundUname = false;

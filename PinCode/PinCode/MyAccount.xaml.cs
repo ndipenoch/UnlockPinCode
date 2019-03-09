@@ -12,9 +12,33 @@ namespace PinCode
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MyAccount : ContentPage
 	{
-		public MyAccount ()
+		public MyAccount (string uName)
 		{
 			InitializeComponent ();
-		}
-	}
+            usernamer.Text = "Welcome " + uName+"!";
+            MyAccountSettings();
+
+        }
+
+        private void MyAccountSettings()
+        {
+            
+           
+        }
+
+        private void HomeBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new MainPage());
+        }
+
+        private void EditBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new EditMyAccount());
+        }
+
+        private void DeleteBtn_Clicked(object sender, EventArgs e)
+        {
+
+        }
+    }
 }

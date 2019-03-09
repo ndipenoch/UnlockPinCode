@@ -19,3 +19,4 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\bin\Debug\netstandard2
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\obj\Debug\netstandard2.0\PinCode.csproj.CopyComplete
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\obj\Debug\netstandard2.0\MyAccount.xaml.g.cs
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\obj\Debug\netstandard2.0\EditMyAccount.xaml.g.cs

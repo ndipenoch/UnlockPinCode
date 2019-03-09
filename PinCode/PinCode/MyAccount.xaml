@@ -1,12 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="Silver"
              x:Class="PinCode.MyAccount">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start"  Grid.Row="0" Grid.Column="0" BackgroundColor="Orange" TextColor="Yellow"/>
+
+            <Label x:Name="usernamer" HorizontalOptions="End"  Grid.Row="0" Grid.Column="1" FontSize="Large" TextColor="Yellow"/>
+
+            <StackLayout x:Name="FirstName" Grid.Row="1" Grid.Column="0" Margin="2" Orientation="Horizontal">
+                <Label Text="Firstname: " TextColor="Black" />
+                <Label x:Name="fName" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="SurName" Grid.Row="2" Grid.Column="0" Margin="2" Orientation="Horizontal">
+                <Label Text="Surname: " TextColor="Black" />
+                <Label x:Name="sName" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Email" Grid.Row="3" Grid.Column="0" Margin="2" Orientation="Horizontal">
+                <Label Text="Email: " TextColor="Black" />
+                <Label x:Name="lEmail" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Telephone" Grid.Row="4" Grid.Column="0" Margin="2" Orientation="Horizontal">
+                <Label Text="Tel: " TextColor="Black" />
+                <Label x:Name="lTel" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Street" Grid.Row="5" Grid.Column="0" Margin="2" Orientation="Horizontal">
+                <Label Text="Street: " TextColor="Black" />
+                <Label x:Name="lStreet" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Town" Grid.Row="6" Grid.Column="0" Margin="2" Orientation="Horizontal">
+                <Label Text="Town: " TextColor="Black" />
+                <Label x:Name="lTown" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Country" Grid.Row="7" Grid.Column="0" Margin="2" Orientation="Horizontal">
+                <Label Text="Country: " TextColor="Black" />
+                <Label x:Name="lCountry" TextColor="Blue" />
+            </StackLayout>
+
+            <Button x:Name="EditBtn" Text="EDIT" Clicked="EditBtn_Clicked" HorizontalOptions="Start" Grid.Row="8" Grid.Column="0" BackgroundColor="Green" TextColor="Yellow" WidthRequest="150" HeightRequest="60"/>
+            <Button x:Name="DeleteBtn" Text="DELETE ACCOUNT" Clicked="DeleteBtn_Clicked" HorizontalOptions="End" Grid.Row="8" Grid.Column="1" BackgroundColor="Red" TextColor="Black" WidthRequest="150" HeightRequest="60"/>
+
+        </Grid>
+    </Grid>
 </ContentPage>
