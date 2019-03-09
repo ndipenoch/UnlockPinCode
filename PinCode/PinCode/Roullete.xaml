@@ -28,7 +28,6 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
-
             </Grid.ColumnDefinitions>
 
             <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" BackgroundColor="Orange" TextColor="Yellow"/>

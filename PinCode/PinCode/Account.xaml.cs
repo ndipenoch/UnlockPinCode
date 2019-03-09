@@ -10,6 +10,8 @@ using Firebase.Database.Query;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Android.Widget;
+using System.Diagnostics;
+using System.Net;
 
 namespace PinCode
 {
@@ -26,7 +28,7 @@ namespace PinCode
         private bool FoundpWord = false;
         private bool FoundUname = false;
 
-        public Account()
+        public  Account()
         {
             InitializeComponent();
 
@@ -37,12 +39,17 @@ namespace PinCode
                 {
                     AuthTokenAsyncFactory = () => Task.FromResult(databaseSecret)
                 });
+
         }
 
         //Retrieve userdetails from Firebase
         private  async void SignIn_Clicked(object sender, EventArgs e)
         {
-
+            if (CheckInternetConnection() == false)
+            {
+                await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
+                Navigation.PushAsync(new MainPage());
+            }
             foundUserName = false;
             FoundpWord =false;
             //check if the username is correct
@@ -70,12 +77,13 @@ namespace PinCode
             }
             else
             {
-                await DisplayAlert("Incoorect Username", "Incoorect Username!", "OK");
+                await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK");
             }
 
             if (FoundpWord == true)
             {
-                System.Diagnostics.Debug.WriteLine("Your are login");
+                // System.Diagnostics.Debug.WriteLine("Your are login");
+                Navigation.PushAsync(new MyAccount());
             }
             if (foundUserName==true && FoundpWord == false)
             {
@@ -90,6 +98,12 @@ namespace PinCode
         //insert user's details to Firebase
         private  async void SignUp_Clicked(object sender, EventArgs e)
         {
+            if (CheckInternetConnection() == false)
+            {
+                await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
+                Navigation.PushAsync(new MainPage());
+            }
+
             FoundUname = false;
             //check if the username is already used
             var results = await firebase.Child(node).OnceAsync<Data>();
@@ -123,12 +137,25 @@ namespace PinCode
 
         }
 
-                private async void Delete_Clicked(object sender, EventArgs e)
-               {
-                 //FirebaseResponse response = await client.DeleteTaskAsync("information/");
-                // await firebase.Child(node).DeleteAsync();
+        //check the internet connection.
+        public bool CheckInternetConnection()
+        {
+            string CheckUrl = "https://unlockpincode-d448d.firebaseio.com/";
 
-               }
+            try
+            {
+                HttpWebRequest iNetRequest = (HttpWebRequest)WebRequest.Create(CheckUrl);
+                iNetRequest.Timeout = 5000;
+                WebResponse iNetResponse = iNetRequest.GetResponse();
+                iNetResponse.Close();
+                return true;
+            }
+            catch (WebException ex)
+            {
+                return false;
+            }
+        }
+
     }
 
  

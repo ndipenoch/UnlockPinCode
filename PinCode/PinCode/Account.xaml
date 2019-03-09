@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="Silver"
              x:Class="PinCode.Account">
     <Grid HorizontalOptions="Center" VerticalOptions="Center">
 
@@ -31,9 +32,6 @@
             <Button x:Name="signUp"  Clicked="SignUp_Clicked" Text="Sign up" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="150" HeightRequest="60" />
         </StackLayout>
 
-        <StackLayout x:Name="DeleteBtn" Grid.Row="4" Margin="2" >
-            <Button x:Name="Delete"  Clicked="Delete_Clicked" Text="DELETE" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="150" HeightRequest="60" />
-        </StackLayout>
 
     </Grid>
 </ContentPage>
