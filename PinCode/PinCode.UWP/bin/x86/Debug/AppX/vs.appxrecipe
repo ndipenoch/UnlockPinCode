@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-03-09T18:22:52.472</Modified>
+      <Modified>2019-03-11T18:15:52.860</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\PinCode.UWP.exe">
       <PackagePath>entrypoint\PinCode.UWP.exe</PackagePath>
-      <Modified>2019-03-09T18:22:47.265</Modified>
+      <Modified>2019-03-11T18:15:48.902</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\firebasedatabase.net\4.0.1\lib\netstandard2.0\Firebase.dll">
       <PackagePath>Firebase.dll</PackagePath>
@@ -45,6 +45,10 @@
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\litedb\4.1.4\lib\netstandard2.0\LiteDB.dll">
       <PackagePath>LiteDB.dll</PackagePath>
       <Modified>2018-06-11T18:04:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\microsoft.data.sqlite.core\2.2.2\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+      <Modified>2019-01-24T23:30:00.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -738,6 +742,26 @@
       <PackagePath>SkiaSharp.Views.Forms.dll</PackagePath>
       <Modified>2018-12-02T22:22:24.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+      <Modified>2018-12-18T15:00:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2018-12-18T15:00:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.core\1.1.12\lib\uap10.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2018-12-18T15:00:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v140\1.1.12\runtimes\win10-x86\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2018-12-18T15:01:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.provider.e_sqlite3.uwp10\1.1.12\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2018-12-18T15:00:56.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\system.reactive\4.0.0\lib\uap10.0.16299\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
       <Modified>2018-05-25T15:44:28.000</Modified>
@@ -780,7 +804,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\bin\Debug\netstandard2.0\PinCode.dll">
       <PackagePath>PinCode.dll</PackagePath>
-      <Modified>2019-03-09T18:22:27.226</Modified>
+      <Modified>2019-03-11T18:15:30.794</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -931,11 +955,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-03-09T18:22:46.468</Modified>
+      <Modified>2019-03-11T18:15:48.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-03-09T18:22:46.471</Modified>
+      <Modified>2019-03-11T18:15:48.013</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -947,11 +971,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-03-01T19:02:46.230</Modified>
+      <Modified>2019-03-11T16:19:43.009</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\PinCode.UWP.exe">
       <PackagePath>PinCode.UWP.exe</PackagePath>
-      <Modified>2019-03-09T18:22:52.447</Modified>
+      <Modified>2019-03-11T18:15:52.837</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

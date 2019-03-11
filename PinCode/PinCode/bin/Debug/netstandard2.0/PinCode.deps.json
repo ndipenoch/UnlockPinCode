@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "492b815d6b7dbd51cc32e9719c7153052f947656"
+    "signature": "a73f89b91ad3a2cd9428eff36f64a1316a7f163b"
   },
   "compilationOptions": {},
   "targets": {
@@ -10,6 +10,7 @@
       "PinCode/1.0.0": {
         "dependencies": {
           "FirebaseDatabase.net": "4.0.1",
+          "Microsoft.Data.Sqlite": "2.2.2",
           "NETStandard.Library": "2.0.3",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
@@ -44,6 +45,23 @@
           "lib/netstandard2.0/LiteDB.dll": {
             "assemblyVersion": "4.1.4.0",
             "fileVersion": "4.1.4.0"
+          }
+        }
+      },
+      "Microsoft.Data.Sqlite/2.2.2": {
+        "dependencies": {
+          "Microsoft.Data.Sqlite.Core": "2.2.2",
+          "SQLitePCLRaw.bundle_green": "1.1.12"
+        }
+      },
+      "Microsoft.Data.Sqlite.Core/2.2.2": {
+        "dependencies": {
+          "SQLitePCLRaw.core": "1.1.12"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Data.Sqlite.dll": {
+            "assemblyVersion": "2.2.2.0",
+            "fileVersion": "2.2.2.19024"
           }
         }
       },
@@ -87,6 +105,33 @@
           "lib/netstandard1.3/SkiaSharp.Views.Forms.dll": {
             "assemblyVersion": "1.68.0.0",
             "fileVersion": "1.68.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.12": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.core": "1.1.12"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {
+            "assemblyVersion": "1.1.12.351",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "1.1.12.351",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/1.1.12": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "1.1.12.351",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -265,6 +310,20 @@
       "path": "litedb/4.1.4",
       "hashPath": "litedb.4.1.4.nupkg.sha512"
     },
+    "Microsoft.Data.Sqlite/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hKdp3VGfNkYcLBK3J88qM1Ix2pkYrXRvi2ceKjO/afeXFG5ZYFfMwrc8ETJtb8RajhFDmZEGV2KuGRii0aJW5A==",
+      "path": "microsoft.data.sqlite/2.2.2",
+      "hashPath": "microsoft.data.sqlite.2.2.2.nupkg.sha512"
+    },
+    "Microsoft.Data.Sqlite.Core/2.2.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-cjhnuXXb8YwJzWCcS8v3eK+TjXnf4QCgtnz243GAJIxfzHBHzC31297QSIEW/crtyLOWTypmCnCTaoW+A4ZRkA==",
+      "path": "microsoft.data.sqlite.core/2.2.2",
+      "hashPath": "microsoft.data.sqlite.core.2.2.2.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -313,6 +372,20 @@
       "sha512": "sha512-As1LklMPgG+i/y/d5z2EGKOheRHrTVsGCz/2HTvhtIL6GFnXDcApKfxTSNhRNi8OyQJoLgODCpQqjm0tY58j1Q==",
       "path": "skiasharp.views.forms/1.68.0",
       "hashPath": "skiasharp.views.forms.1.68.0.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/1.1.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-xbscpnvFQy5JNqcNC5djEVJMANSWuZ/SYFG8eCDLZ81e6lMaBuBPfi5dsm8bnCFmYlealei3eDha+/StW7a8og==",
+      "path": "sqlitepclraw.bundle_green/1.1.12",
+      "hashPath": "sqlitepclraw.bundle_green.1.1.12.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/1.1.12": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B43HNCk0NmwLgHEqLSRdcsYKFJeqnv8+XWLXl/g2ZrP7htmlPi2JpurZvqnYyVsBsRpaQfLPxhMBo8Na/29mIw==",
+      "path": "sqlitepclraw.core/1.1.12",
+      "hashPath": "sqlitepclraw.core.1.1.12.nupkg.sha512"
     },
     "System.IO/4.3.0": {
       "type": "package",

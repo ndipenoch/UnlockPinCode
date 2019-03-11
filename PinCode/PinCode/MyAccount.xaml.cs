@@ -40,5 +40,10 @@ namespace PinCode
         {
 
         }
+
+        private void SignOutBtn_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Account());
+        }
     }
 }

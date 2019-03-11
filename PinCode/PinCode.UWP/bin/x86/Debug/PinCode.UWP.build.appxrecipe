@@ -34,6 +34,9 @@
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\litedb\4.1.4\lib\netstandard2.0\LiteDB.dll">
       <PackagePath>LiteDB.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\microsoft.data.sqlite.core\2.2.2\lib\netstandard2.0\Microsoft.Data.Sqlite.dll">
+      <PackagePath>Microsoft.Data.Sqlite.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
@@ -552,6 +555,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\skiasharp.views.forms\1.68.0\lib\uap10.0\SkiaSharp.Views.Forms.dll">
       <PackagePath>SkiaSharp.Views.Forms.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.bundle_green\1.1.12\lib\uap10.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.core\1.1.12\lib\uap10.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.lib.e_sqlite3.v140\1.1.12\runtimes\win10-x86\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\sqlitepclraw.provider.e_sqlite3.uwp10\1.1.12\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\system.reactive\4.0.0\lib\uap10.0.16299\System.Reactive.dll">
       <PackagePath>System.Reactive.dll</PackagePath>
