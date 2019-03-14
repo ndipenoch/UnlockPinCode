@@ -53,22 +53,23 @@ namespace PinCode
 
             String node = username + "Details" + "/";
 
-            UserDetailsData userDetails = new UserDetailsData
-            {
-                username= username,
-                firstname= firstname,
-                surname= surname,
-                email= email,
-                telephone= telephone,
-                street= street,
-                town= town,
-                country= country,
-                bestSquareScore= bestSquareScore,
-                bestRollutteScore= bestRollutteScore
+             UserDetailsData userDetails = new UserDetailsData
+              {
+                  username= username,
+                  firstname= firstname,
+                  surname= surname,
+                  email= email,
+                  telephone= telephone,
+                  street= street,
+                  town= town,
+                  country= country,
+                  bestSquareScore= bestSquareScore,
+                  bestRollutteScore= bestRollutteScore
 
-            };
+              };
 
-            await firebase.Child(node).PostAsync<UserDetailsData>(userDetails);
+              await firebase.Child(node).PostAsync<UserDetailsData>(userDetails);
+   
         }
 
         /// <summary>
@@ -151,24 +152,69 @@ namespace PinCode
 
         }
 
-        /// <summary>
-        /// Delete the sqlite local userdetails table and update it with the firebase information when you sign in.
-        /// </summary>
-        /// <param name="username"></param>
-        public async void ReadDataFromFirebase(string username)
+       // public  UserDetails GetUserByUserName(String username)
+        public async Task<String> ReadDataFbAndroid(String username)
         {
+            //UserDetails userDetails = null;
+            string t = "";
+
+            //Open connection with Firebase
+            ConnectToFirebase();
+            String UserDetailsNode = username + "Details" + "/";
+
+            try
+            {
+                //Read from Firebase 
+                var results = await firebase.Child(UserDetailsNode).OnceAsync<UserDetailsData>();
+
+                  // UserDetailsData ud = new UserDetailsData();
+                   foreach (var details in results)
+                   {
+                    t = details.Object.firstname + "*" + details.Object.surname
+                        + "*" + details.Object.email + "*" + details.Object.telephone + "*" + details.Object.street
+                        + "*" + details.Object.town + "*" + details.Object.country + "*" + details.Object.bestRollutteScore
+                        + "*" + details.Object.bestRollutteScore + "*" + details.Object.bestSquareScore;
+                   /* userDetails = new UserDetails(
+                                details.Object.username,
+                                details.Object.firstname,
+                                details.Object.surname,
+                                details.Object.email,
+                                details.Object.telephone,
+                                details.Object.street,
+                                details.Object.town,
+                                details.Object.country,
+                                details.Object.bestRollutteScore,
+                                details.Object.bestSquareScore
+                             );*/
+    
+                   }
+
+                }
+            catch
+            {
+                System.Diagnostics.Debug.WriteLine("User not in Firebase");
+            }
+            return t;
+        }
+
+
+            /// <summary>
+            /// Delete the sqlite local userdetails table and update it with the firebase information when you sign in.
+            /// </summary>
+            /// <param name="username"></param>
+            public async void ReadDataFbUWP(string username)
+        {
+            
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-
+       
                     break;
                 case Device.UWP:
 
                     //Open connection with Firebase
                     ConnectToFirebase();
-
                     String UserDetailsNode = username + "Details" + "/";
-
 
                     //Establish SQLite connection and populate treatment table
                     using (SqliteConnection db =

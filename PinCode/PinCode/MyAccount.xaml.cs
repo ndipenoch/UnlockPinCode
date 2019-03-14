@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,10 +11,12 @@ namespace PinCode
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MyAccount : ContentPage
 	{
-		public MyAccount (string uName)
+		public  MyAccount (string uName)
 		{
 			InitializeComponent ();
-            usernamer.Text =  uName;
+
+
+        usernamer.Text =  uName;
 
             if (fName.Text == null)
             {
@@ -49,7 +50,7 @@ namespace PinCode
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-
+                    ReadFbAdroid();
                     break;
                 case Device.UWP:
                     DAO d = new DAO();
@@ -78,8 +79,29 @@ namespace PinCode
 
             MyAccountSettings();
 
+            
+            async void ReadFbAdroid()
+            {
+                FirebaseDAO fb = new FirebaseDAO();
+                string result = await fb.ReadDataFbAndroid(uName);
+                if (result != "")
+                {
+                    string[] splitString = result.Split('*');
+                    fName.Text = splitString[0];
+                    sName.Text = splitString[1];
+                    lEmail.Text = splitString[2];
+                    lTel.Text = splitString[3];
+                    lStreet.Text = splitString[4];
+                    lTown.Text = splitString[5];
+                    lCountry.Text = splitString[6];
+                    Rscores.Text = splitString[7];
+                    Sscores.Text = splitString[8];
+                }
+            }
+
         }
 
+       
         private void MyAccountSettings()
         {
 

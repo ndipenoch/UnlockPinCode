@@ -31,47 +31,47 @@
 
             <Label x:Name="usernamer" HorizontalOptions="End"  Grid.Row="0" Grid.Column="2" FontSize="Medium" TextColor="Yellow"/>
 
-            <StackLayout x:Name="FirstName" Grid.Row="1" Grid.Column="0"  Orientation="Horizontal">
+            <StackLayout x:Name="FirstName" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
                 <Label Text="Firstname: " TextColor="Black" />
                 <Label x:Name="fName" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="roulleteScores" Grid.Row="1" Grid.Column="2"  Orientation="Horizontal">
+            <StackLayout x:Name="roulleteScores" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"  Orientation="Horizontal">
                 <Label Text="Roullete: " TextColor="Black" />
                 <Label x:Name="Rscores" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="SurName" Grid.Row="2" Grid.Column="0"  Orientation="Horizontal">
+            <StackLayout x:Name="SurName" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
                 <Label Text="Surname: " TextColor="Black" />
                 <Label x:Name="sName" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="SquareScores" Grid.Row="2" Grid.Column="2"  Orientation="Horizontal">
+            <StackLayout x:Name="SquareScores" Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"  Orientation="Horizontal">
                 <Label Text="Square: " TextColor="Black" />
                 <Label x:Name="Sscores" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="Email" Grid.Row="3" Grid.Column="0"  Orientation="Horizontal">
+            <StackLayout x:Name="Email" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
                 <Label Text="Email: " TextColor="Black" />
                 <Label x:Name="lEmail" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="Telephone" Grid.Row="4" Grid.Column="0"  Orientation="Horizontal">
+            <StackLayout x:Name="Telephone" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Horizontal">
                 <Label Text="Tel: " TextColor="Black" />
                 <Label x:Name="lTel" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="Street" Grid.Row="5" Grid.Column="0"  Orientation="Horizontal">
+            <StackLayout x:Name="Street" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
                 <Label Text="Street: " TextColor="Black" />
                 <Label x:Name="lStreet" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="Town" Grid.Row="6" Grid.Column="0"  Orientation="Horizontal">
+            <StackLayout x:Name="Town" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Horizontal">
                 <Label Text="Town: " TextColor="Black" />
                 <Label x:Name="lTown" TextColor="Blue"/>
             </StackLayout>
 
-            <StackLayout x:Name="Country" Grid.Row="7" Grid.Column="0"  Orientation="Horizontal">
+            <StackLayout x:Name="Country" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
                 <Label Text="Country: " TextColor="Black" />
                 <Label x:Name="lCountry" TextColor="Blue" />
             </StackLayout>

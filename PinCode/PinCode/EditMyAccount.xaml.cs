@@ -12,7 +12,7 @@ namespace PinCode
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class EditMyAccount : ContentPage
 	{
-		public EditMyAccount (string uName)
+		public  EditMyAccount (string uName)
 		{
 			InitializeComponent ();
             EditUsernamer.Text = uName;
@@ -20,7 +20,7 @@ namespace PinCode
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-
+                    ReadFbAdroid();
                     break;
                 case Device.UWP:
                     DAO d = new DAO();
@@ -49,49 +49,71 @@ namespace PinCode
 
         }
 
+        /// <summary>
+        /// Read user details from Firebase
+        /// </summary>
+        async void ReadFbAdroid()
+        {
+            FirebaseDAO fb = new FirebaseDAO();
+            string result = await fb.ReadDataFbAndroid(EditUsernamer.Text);
+            if (result != "")
+            {
+                string[] splitString = result.Split('*');
+                EditName.Text = splitString[0];
+                EditSurname.Text = splitString[1];
+                EditEmail.Text = splitString[2];
+                EditTel.Text = splitString[3];
+                EditStreet.Text = splitString[4];
+                EditTown.Text = splitString[5];
+                EditCountry.Text = splitString[6];
+                EditSscores.Text = splitString[7];
+                EditRScores.Text = splitString[8];
+            }
+        }
+
         private void SaveBtn_Clicked(object sender, EventArgs e)
         {
+            float s = (float)Convert.ToDouble(EditSscores.Text);
+            float r = (float)Convert.ToDouble(EditRScores.Text);
+
+            if (EditName.Text == null)
+            {
+                EditName.Text = "First name";
+            }
+            if (EditSurname.Text == null)
+            {
+                EditSurname.Text = "Surname";
+            }
+            if (EditEmail.Text == null)
+            {
+                EditEmail.Text = "Email";
+            }
+            if (EditTel.Text == null)
+            {
+                EditTel.Text = "phone Number";
+            }
+            if (EditStreet.Text == null)
+            {
+                EditStreet.Text = "Street";
+            }
+            if (EditTown.Text == null)
+            {
+                EditTown.Text = "Town";
+            }
+            if (EditCountry.Text == null)
+            {
+                EditCountry.Text = "Country";
+            }
+
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-
+                    FirebaseDAO fb = new FirebaseDAO();
+                    fb.AddUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
                     break;
                 case Device.UWP:
-                    float s = (float)Convert.ToDouble(EditSscores.Text);
-                    float r = (float)Convert.ToDouble(EditRScores.Text);
-
-                    if (EditName.Text == null)
-                    {
-                        EditName.Text = "First name";
-                    }
-                    if (EditSurname.Text == null)
-                    {
-                        EditSurname.Text = "Surname";
-                    }
-                    if (EditEmail.Text == null)
-                    {
-                        EditEmail.Text = "Email";
-                    }
-                    if (EditTel.Text == null)
-                    {
-                        EditTel.Text = "Telephone Number";
-                    }
-                    if (EditStreet.Text == null)
-                    {
-                        EditStreet.Text = "Street";
-                    }
-                    if (EditTown.Text == null)
-                    {
-                        EditTown.Text = "Town";
-                    }
-                    if (EditCountry.Text == null)
-                    {
-                        EditCountry.Text = "Country";
-                    }
-                 
                     DAO d = new DAO();
                     int cnt = d.GetUserByUserName1(EditUsernamer.Text);
-
                     if (cnt>0)
                      {
                         d.UpdateUserDetails(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
