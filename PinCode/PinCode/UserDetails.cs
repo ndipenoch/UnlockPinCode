@@ -16,10 +16,11 @@ namespace PinCode
         public string street { get; set; }
         public string town { get; set; }
         public string country { get; set; }
-        public float bestScore { get; set; }
+        public float bestSquareScore { get; set; }
+        public float bestRollutteScore { get; set; }
 
 
-        public UserDetails(string username, string firstName, string surname, string email, string telephone, string street, string town, string country, float bestScores)
+        public UserDetails(string username, string firstName, string surname, string email, string telephone, string street, string town, string country, float bestSquareScore, float bestRollutteScore)
         {
             this.username = username;
             this.firstname = firstName;
@@ -29,8 +30,9 @@ namespace PinCode
             this.street = street;
             this.town = town;
             this.country = country;
-            this.bestScore = bestScores;
-       
+            this.bestSquareScore = bestSquareScore;
+            this.bestRollutteScore = bestRollutteScore;
+
         }
 
         public UserDetails(string v)

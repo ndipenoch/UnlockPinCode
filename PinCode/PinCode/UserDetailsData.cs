@@ -14,6 +14,7 @@ namespace PinCode
         public string street { get; set; }
         public string town { get; set; }
         public string country { get; set; }
-        public float bestScore { get; set; }
+        public float bestSquareScore { get; set; }
+        public float bestRollutteScore { get; set; }
     }
 }

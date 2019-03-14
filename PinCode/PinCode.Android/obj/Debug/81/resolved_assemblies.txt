@@ -3,6 +3,7 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\a
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\FormsViewGroup.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\Java.Interop.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\LiteDB.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\Microsoft.Data.Sqlite.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\Mono.Android.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\mscorlib.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\MvvmCross.Platform.dll
@@ -17,6 +18,11 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\a
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SkiaSharp.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SkiaSharp.Views.Android.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SkiaSharp.Views.Forms.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SQLitePCLRaw.batteries_green.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SQLitePCLRaw.core.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SQLitePCLRaw.lib.e_sqlite3.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\SQLitePCLRaw.provider.e_sqlite3.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\System.Core.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\System.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\assets\System.Reactive.dll

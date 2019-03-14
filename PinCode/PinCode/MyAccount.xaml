@@ -16,6 +16,9 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
@@ -24,18 +27,28 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start"  Grid.Row="0" Grid.Column="0" BackgroundColor="Orange" TextColor="Yellow"/>
+            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start"  Grid.Row="0" Grid.Column="0" BackgroundColor="Orange" TextColor="Yellow" CornerRadius="7"/>
 
-            <Label x:Name="usernamer" HorizontalOptions="End"  Grid.Row="0" Grid.Column="2" FontSize="Large" TextColor="Yellow"/>
+            <Label x:Name="usernamer" HorizontalOptions="End"  Grid.Row="0" Grid.Column="2" FontSize="Medium" TextColor="Yellow"/>
 
             <StackLayout x:Name="FirstName" Grid.Row="1" Grid.Column="0"  Orientation="Horizontal">
                 <Label Text="Firstname: " TextColor="Black" />
                 <Label x:Name="fName" TextColor="Blue"/>
             </StackLayout>
 
+            <StackLayout x:Name="roulleteScores" Grid.Row="1" Grid.Column="2"  Orientation="Horizontal">
+                <Label Text="Roullete: " TextColor="Black" />
+                <Label x:Name="Rscores" TextColor="Blue"/>
+            </StackLayout>
+
             <StackLayout x:Name="SurName" Grid.Row="2" Grid.Column="0"  Orientation="Horizontal">
                 <Label Text="Surname: " TextColor="Black" />
                 <Label x:Name="sName" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="SquareScores" Grid.Row="2" Grid.Column="2"  Orientation="Horizontal">
+                <Label Text="Square: " TextColor="Black" />
+                <Label x:Name="Sscores" TextColor="Blue"/>
             </StackLayout>
 
             <StackLayout x:Name="Email" Grid.Row="3" Grid.Column="0"  Orientation="Horizontal">
@@ -63,9 +76,9 @@
                 <Label x:Name="lCountry" TextColor="Blue" />
             </StackLayout>
 
-            <Button x:Name="EditBtn" Text="EDIT" Clicked="EditBtn_Clicked" HorizontalOptions="Start" Grid.Row="8" Grid.Column="0" BackgroundColor="Green" TextColor="Yellow" WidthRequest="150" HeightRequest="60"/>
-            <Button x:Name="SignOutBtn" Text="SIGN OUT" Clicked="SignOutBtn_Clicked" HorizontalOptions="Center" Grid.Row="8" Grid.Column="1" BackgroundColor="Orange" TextColor="Black" WidthRequest="150" HeightRequest="60"/>
-            <Button x:Name="DeleteBtn" Text="DELETE ACCOUNT" Clicked="DeleteBtn_Clicked" HorizontalOptions="End" Grid.Row="8" Grid.Column="2" BackgroundColor="Red" TextColor="Black" WidthRequest="150" HeightRequest="60"/>
+            <Button x:Name="EditBtn" Text="EDIT" Clicked="EditBtn_Clicked" HorizontalOptions="Start" Grid.Row="8" Grid.Column="0" BackgroundColor="Green" TextColor="Yellow" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
+            <Button x:Name="SignOutBtn" Text="SIGN OUT" Clicked="SignOutBtn_Clicked" HorizontalOptions="Center" Grid.Row="8" Grid.Column="1" BackgroundColor="Orange" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
+            <Button x:Name="DeleteBtn" Text="DELETE ACCOUNT" Clicked="DeleteBtn_Clicked" HorizontalOptions="End" Grid.Row="8" Grid.Column="2" BackgroundColor="Red" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
 
         </Grid>
     </Grid>

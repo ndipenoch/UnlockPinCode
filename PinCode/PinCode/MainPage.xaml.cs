@@ -24,9 +24,12 @@ namespace PinCode
             InitializeComponent();
             DAO d = new DAO();
             d.InitializeDatabase();
-            //d.AddUserDetails("sally","James","Ndip","jimmy@gmail.com","000000","29 Forser Place","LA", "USA", 200);
+            //d.AddUserDetails("mark", "Marco", "Ndip", "jimmy@gmail.com", "000000", "29 Forser Place", "LA", "USA", 200,50);
+           // d.AddUserDetails("james", "James", "Ndip", "jimmy@gmail.com", "000000", "29 Forser Place", "NY", "USA", 400, 260);
+            //d.UpdateUserDetails("mark","James","Ndip","jimmy@gmail.com","000000","29 Forser Place","LA", "USA", 200);
             //d.AddUserDetails("markavella", "mark", "Ndip", "jimmy@gmail.com", "000000", "29 Forser Place", "NY", "USA", 1000);
-            //d.DeleteUserAccount("sally");
+            //d.DeleteUserAccount("marko");
+            // d.DeleteUserAccount("markavella");
             SetDefaultSettings();
         }
 

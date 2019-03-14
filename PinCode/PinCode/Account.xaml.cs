@@ -131,6 +131,8 @@ namespace PinCode
                 };
 
                 await firebase.Child(node).PostAsync<Data>(data);
+
+                Navigation.PushAsync(new MyAccount(username.Text));
             }
 
             username.Text = "";

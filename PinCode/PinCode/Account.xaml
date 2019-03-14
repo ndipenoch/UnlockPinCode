@@ -25,11 +25,11 @@
         </StackLayout>
 
         <StackLayout x:Name="signInBtn" Grid.Row="2" Margin="2" >
-            <Button x:Name="signIn"  Clicked="SignIn_Clicked" Text="Sign In" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="150" HeightRequest="60" />
+            <Button x:Name="signIn"  Clicked="SignIn_Clicked" Text="Sign In" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="150" HeightRequest="60" CornerRadius="7"/>
        </StackLayout>
 
         <StackLayout x:Name="signUpBtn" Grid.Row="3" Margin="2" >
-            <Button x:Name="signUp"  Clicked="SignUp_Clicked" Text="Sign up" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="150" HeightRequest="60" />
+            <Button x:Name="signUp"  Clicked="SignUp_Clicked" Text="Sign up" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="150" HeightRequest="60" CornerRadius="7"/>
         </StackLayout>
 
 

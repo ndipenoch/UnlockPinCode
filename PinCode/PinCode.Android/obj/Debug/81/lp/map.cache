@@ -1,6 +1,7 @@
 Firebase
 FormsViewGroup
 LiteDB
+Microsoft.Data.Sqlite
 MvvmCross.Platform
 MvvmCross.Platform.Droid
 Newtonsoft.Json
@@ -13,6 +14,11 @@ Plugin.SimpleAudioPlayer
 SkiaSharp
 SkiaSharp.Views.Android
 SkiaSharp.Views.Forms
+SQLitePCLRaw.batteries_green
+SQLitePCLRaw.batteries_v2
+SQLitePCLRaw.core
+SQLitePCLRaw.lib.e_sqlite3
+SQLitePCLRaw.provider.e_sqlite3
 System.Reactive
 System.Runtime
 Teddy.MvvmCross.Plugins.SimpleAudioPlayer
@@ -46,9 +52,3 @@ netstandard
 System.Resources.ResourceManager
 System.Reflection.Extensions
 System.Runtime.InteropServices.WindowsRuntime
-Microsoft.Data.Sqlite
-SQLitePCLRaw.core
-SQLitePCLRaw.batteries_green
-SQLitePCLRaw.batteries_v2
-SQLitePCLRaw.lib.e_sqlite3
-SQLitePCLRaw.provider.e_sqlite3
