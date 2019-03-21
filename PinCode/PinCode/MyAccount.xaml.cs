@@ -15,7 +15,6 @@ namespace PinCode
 		{
 			InitializeComponent ();
 
-
         usernamer.Text =  uName;
 
             if (fName.Text == null)
@@ -119,14 +118,17 @@ namespace PinCode
 
         private void DeleteBtn_Clicked(object sender, EventArgs e)
         {
+            FirebaseDAO fb = new FirebaseDAO();
+
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-
+                    fb.DeletUserDetailsFB(usernamer.Text);
                     break;
                 case Device.UWP:
                     DAO d = new DAO();
                     d.DeleteUserAccount(usernamer.Text);
+                    fb.DeletUserDetailsFB(usernamer.Text);
                     break;
                 default:
                     break;

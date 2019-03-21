@@ -16,6 +16,8 @@ namespace PinCode
 		{
 			InitializeComponent ();
             EditUsernamer.Text = uName;
+            DAO d = new DAO();
+            FirebaseDAO fb = new FirebaseDAO();
 
             switch (Device.RuntimePlatform)
             {
@@ -23,7 +25,8 @@ namespace PinCode
                     ReadFbAdroid();
                     break;
                 case Device.UWP:
-                    DAO d = new DAO();
+                    fb.ReadDataFbUWP( uName);
+                    //Read from local table/SQLite and display to the user
                     try
                     {
                         UserDetails ud = d.GetUserByUserName(uName);
@@ -73,6 +76,9 @@ namespace PinCode
 
         private void SaveBtn_Clicked(object sender, EventArgs e)
         {
+            FirebaseDAO fb = new FirebaseDAO();
+            DAO d = new DAO();
+
             float s = (float)Convert.ToDouble(EditSscores.Text);
             float r = (float)Convert.ToDouble(EditRScores.Text);
 
@@ -108,20 +114,20 @@ namespace PinCode
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-                    FirebaseDAO fb = new FirebaseDAO();
                     fb.AddUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
                     break;
                 case Device.UWP:
-                    DAO d = new DAO();
                     int cnt = d.GetUserByUserName1(EditUsernamer.Text);
                     if (cnt>0)
                      {
                         d.UpdateUserDetails(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
-                     }
+                        fb.UpdateUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
+                    }
                      else
                      {
                         d.AddUserDetails(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
-                     }
+                        fb.AddUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
+                    }
                     break;
                 default:
                     break;

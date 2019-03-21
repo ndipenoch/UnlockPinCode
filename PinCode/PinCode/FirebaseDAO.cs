@@ -6,6 +6,7 @@ using Firebase.Database.Query;
 using Microsoft.Data.Sqlite;
 using System.Text;
 using Xamarin.Forms;
+using System.Diagnostics;
 
 namespace PinCode
 {
@@ -48,7 +49,6 @@ namespace PinCode
         /// <param name="bestRollutteScore"></param>
         public async void AddUserDetailsFB(string username, string firstname, string surname, string email, string telephone, string street, string town, string country, float bestSquareScore, float bestRollutteScore)
         {
-
             ConnectToFirebase();
 
             String node = username + "Details" + "/";
@@ -131,21 +131,34 @@ namespace PinCode
         {
             ConnectToFirebase();
 
-            String node = username + "Details" + "/";
+            String UserDetailsNode = username + "Details" + "/";
+            String UserLoginNode = "details/";
 
             UserDetailsData userDetails = new UserDetailsData
             {
                 username = username,
             };
 
-            var results = await firebase.Child(node).OnceAsync<UserDetailsData>();
+            //Delete User details
+            var results = await firebase.Child(UserDetailsNode).OnceAsync<UserDetailsData>();
             foreach (var details in results)
             {
 
                 if (details.Object.username == username)
                 {
                     //Delete the old row by key Id
-                    await firebase.Child(node).Child(details.Key).DeleteAsync();
+                    await firebase.Child(UserDetailsNode).Child(details.Key).DeleteAsync();
+                    break;
+                }
+            }
+
+            //Delete Users Login Details
+            var rlts = await firebase.Child(UserLoginNode).OnceAsync<Data>();
+            foreach (var uName in rlts)
+            {
+                if (uName.Object.username == username)
+                {
+                    await firebase.Child(UserLoginNode).Child(uName.Key).DeleteAsync();
                     break;
                 }
             }
@@ -222,12 +235,6 @@ namespace PinCode
                     {
                         //open sqlite Connection 
                         db.Open();
-                        SqliteCommand selectCommand = new SqliteCommand
-                            //Delete everything in the usersDetails table
-                            ("DELETE * from usersDetails where username=@Username", db);
-                        selectCommand.Parameters.AddWithValue("@Username", username);
-
-                        SqliteDataReader query = selectCommand.ExecuteReader();
 
                         //Read from Firebase and populate the local datbase/SQLite usersDetails table
                         var results = await firebase.Child(UserDetailsNode).OnceAsync<UserDetailsData>();
@@ -237,7 +244,7 @@ namespace PinCode
                             insertCommand.Connection = db;
 
                             // Use parameterized query
-                            insertCommand.CommandText = "INSERT INTO usersDetails (username,firstName,surname,email,telephone,street,town,country,bestSquareScore,bestRollutteScore) VALUES (@Username,@FirstName,@Surname,@Email,@Telephone,@Street,@Town,@Country,@BestSquareScore,@BestRollutteScore);";
+                            insertCommand.CommandText = "UPDATE usersDetails SET username=@Username, firstName =@FirstName, surname =@Surname, email =@Email, telephone =@Telephone,street =@Street,town =@Town, country =@Country, bestSquareScore =@BestSquareScore, bestRollutteScore =@BestRollutteScore  where username=@Username;";
                             insertCommand.Parameters.AddWithValue("@Username", details.Object.username);
                             insertCommand.Parameters.AddWithValue("@FirstName", details.Object.firstname);
                             insertCommand.Parameters.AddWithValue("@Surname", details.Object.surname);

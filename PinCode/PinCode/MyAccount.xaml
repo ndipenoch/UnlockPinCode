@@ -77,8 +77,8 @@
             </StackLayout>
 
             <Button x:Name="EditBtn" Text="EDIT" Clicked="EditBtn_Clicked" HorizontalOptions="Start" Grid.Row="8" Grid.Column="0" BackgroundColor="Green" TextColor="Yellow" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
-            <Button x:Name="SignOutBtn" Text="SIGN OUT" Clicked="SignOutBtn_Clicked" HorizontalOptions="Center" Grid.Row="8" Grid.Column="1" BackgroundColor="Orange" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
-            <Button x:Name="DeleteBtn" Text="DELETE ACCOUNT" Clicked="DeleteBtn_Clicked" HorizontalOptions="End" Grid.Row="8" Grid.Column="2" BackgroundColor="Red" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
+            <Button x:Name="SignOutBtn" Text="LOGOUT" Clicked="SignOutBtn_Clicked" HorizontalOptions="Center" Grid.Row="8" Grid.Column="1" BackgroundColor="Orange" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
+            <Button x:Name="DeleteBtn" Text="DELETE" Clicked="DeleteBtn_Clicked" HorizontalOptions="End" Grid.Row="8" Grid.Column="2" BackgroundColor="Red" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
 
         </Grid>
     </Grid>
