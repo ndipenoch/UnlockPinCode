@@ -129,10 +129,12 @@ namespace PinCode
                     if (App.EdittedAcount == true)
                     {
                         UpdateUserDetailsFB(App.MainUsername, App.MainFirstname, App.MainSurname, App.MainEmail, App.MainTelephone, App.MainStreet, App.MainTown, App.MainCountry, App.SquareBestScores, App.RoulleteBestScores);
+                        System.Diagnostics.Debug.WriteLine("App Name :" + App.MainUsername);
                     }
                     else
                     {
                         UpdateUserDetailsFB(App.CurrentUser, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", App.SquareBestScores, App.RoulleteBestScores);
+                        System.Diagnostics.Debug.WriteLine("Current User :" + App.CurrentUser);
                     }
                      
                     break;
@@ -216,7 +218,8 @@ namespace PinCode
                         + "*" + details.Object.town + "*" + details.Object.country + "*" + details.Object.bestRollutteScore
                         + "*" + details.Object.bestSquareScore;
 
-                    App.MainUsername = details.Object.firstname;
+                    App.MainUsername = username;
+                    App.MainFirstname = details.Object.firstname;
                     App.MainSurname = details.Object.surname;
                     App.MainEmail = details.Object.email;
                     App.MainTelephone = details.Object.telephone;

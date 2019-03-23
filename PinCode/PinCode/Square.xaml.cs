@@ -57,9 +57,11 @@ namespace PinCode
             if (App.IsLogin == true)
             {
                 S_ScoreLabel.IsVisible = true;
+                WecomeMsg.IsVisible = true;
             }
                 lblAnswer.Text = " " + levelNum;
                 best_score.Text = "" + App.SquareBestScores;
+                welcome_Msg.Text = App.CurrentUser + "!";
 
 
             Random random = new Random();

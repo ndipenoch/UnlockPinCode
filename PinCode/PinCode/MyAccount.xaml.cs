@@ -15,7 +15,9 @@ namespace PinCode
 		{
 			InitializeComponent ();
 
-        usernamer.Text =  uName;
+            usernamer.Text =  uName;
+
+            
 
             if (fName.Text == null)
             {
