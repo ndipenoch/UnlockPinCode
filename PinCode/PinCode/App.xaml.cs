@@ -8,6 +8,22 @@ namespace PinCode
 {
     public partial class App : Application
     {
+        public static float SquareBestScores;
+        public static float RoulleteBestScores;
+        public static bool IsLogin = false;
+        public static string CurrentUser;
+        public static bool EdittedAcount=false;
+
+        public static String MainUsername;
+        public static String MainFirstname;
+        public static String MainSurname;
+        public static String MainEmail;
+        public static String MainTelephone;
+        public static string MainStreet;
+        public static String MainTown;
+        public static String MainCountry;
+    
+
         public App()
         {
             InitializeComponent();
@@ -31,4 +47,6 @@ namespace PinCode
             // Handle when your app resumes
         }
     }
+
+
 }

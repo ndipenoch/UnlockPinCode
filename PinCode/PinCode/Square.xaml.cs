@@ -41,6 +41,7 @@ namespace PinCode
         int timerIntervalL4 = 1000;
         int sleepTimeLevel4 = 400;
         int interval;
+        float BestSquareScore=0;
         System.Timers.Timer timer = new System.Timers.Timer();
 
 
@@ -53,8 +54,13 @@ namespace PinCode
 
         private void SquareBoard()
         {
+            if (App.IsLogin == true)
+            {
+                S_ScoreLabel.IsVisible = true;
+            }
+                lblAnswer.Text = " " + levelNum;
+                best_score.Text = "" + App.SquareBestScores;
 
-            lblAnswer.Text = " " + levelNum;
 
             Random random = new Random();
             codeValue1 = random.Next(1, 10);
@@ -90,6 +96,53 @@ namespace PinCode
                 ReplayButton.IsVisible = true;
 
             }
+
+            if (BestSquareScore > App.SquareBestScores && App.IsLogin==true)
+            {
+                App.SquareBestScores = BestSquareScore;
+           
+                    FirebaseDAO fb = new FirebaseDAO();
+                    fb.UpdateSquareScores();
+            }
+            best_score.Text = "" + App.SquareBestScores;
+            System.Diagnostics.Debug.WriteLine("Your Current score is: " + BestSquareScore);
+            System.Diagnostics.Debug.WriteLine("App score is: " + App.SquareBestScores);
+        }
+
+        public void SettingsLevelStage_1()
+        {
+            allIsGood.IsVisible = true;
+            good1.IsVisible = true;
+            clickCnt++;
+            BestSquareScore += 10;
+            
+        }
+
+        public void SettingsLevelStage_2()
+        {
+            allIsGood.IsVisible = true;
+            good2.IsVisible = true;
+            clickCnt++;
+            BestSquareScore += 10;
+
+        }
+
+        public void SettingsLevelStage_3()
+        {
+            allIsGood.IsVisible = true;
+            good3.IsVisible = true;
+            clickCnt++;
+            BestSquareScore += 10;
+ 
+        }
+
+        public void SettingsLevelStage_4()
+        {
+            allIsGood.IsVisible = true;
+            good4.IsVisible = true;
+            clickCnt++;
+            BestSquareScore += 10;
+ 
         }
 
         public void NextLevelSettings()
@@ -443,27 +496,19 @@ namespace PinCode
             //Convert.ToInt32(SquareBtn1.Text)
             if (rdnSquareBtn1 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn1 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn1 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn1 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -493,27 +538,19 @@ namespace PinCode
         {
             if (rdnSquareBtn2 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn2 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn2 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn2 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -543,27 +580,19 @@ namespace PinCode
         {
             if (rdnSquareBtn3 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn3 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn3 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn3 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -593,27 +622,19 @@ namespace PinCode
         {
             if (rdnSquareBtn4 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn4 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn4 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn4 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -643,27 +664,19 @@ namespace PinCode
         {
             if (rdnSquareBtn5 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn5 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn5 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn5 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -693,27 +706,19 @@ namespace PinCode
         {
             if (rdnSquareBtn6 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn6 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn6 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn6 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -743,27 +748,19 @@ namespace PinCode
         {
             if (rdnSquareBtn7 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn7 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn7 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn7 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -793,27 +790,19 @@ namespace PinCode
         {
             if (rdnSquareBtn8 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn8 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn8 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn8 == codeValue4 && clickCnt == 4)
             {
-                good4.IsVisible = true;
-                allIsGood.IsVisible = false;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {
@@ -843,27 +832,19 @@ namespace PinCode
         {
             if (rdnSquareBtn9 == codeValue1 && clickCnt == 1)
             {
-                allIsGood.IsVisible = true;
-                good1.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_1();
             }
             else if (rdnSquareBtn9 == codeValue2 && clickCnt == 2)
             {
-                allIsGood.IsVisible = true;
-                good2.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_2();
             }
             else if (rdnSquareBtn9 == codeValue3 && clickCnt == 3)
             {
-                allIsGood.IsVisible = true;
-                good3.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_3();
             }
             else if (rdnSquareBtn9 == codeValue4 && clickCnt == 4)
             {
-                allIsGood.IsVisible = true;
-                good4.IsVisible = true;
-                clickCnt++;
+                SettingsLevelStage_4();
             }
             else if (clickCnt == 1)
             {

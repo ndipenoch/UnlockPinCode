@@ -68,7 +68,7 @@ namespace PinCode
         private void AccountBtn_Clicked(object sender, EventArgs e)
         {
             //open the new page
-            Navigation.PushAsync(new Account());
+             Navigation.PushAsync(new Account());
         }
 
         private void FeedbackBtn_Clicked(object sender, EventArgs e)

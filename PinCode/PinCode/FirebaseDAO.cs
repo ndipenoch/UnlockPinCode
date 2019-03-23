@@ -19,7 +19,6 @@ namespace PinCode
         private const String databaseSecret = "gOjxFlBGP1v8vufauNkO9VqnH5PiEwltVATNdUey";
         private FirebaseClient firebase;
 
-
         /// <summary>
         /// Establish connection with Firebase
         /// </summary>
@@ -122,12 +121,33 @@ namespace PinCode
             await firebase.Child(node).PostAsync<UserDetailsData>(userDetails);
         }
 
+        public void UpdateSquareScores()
+        {
+            switch (Device.RuntimePlatform)
+            {
+                case Device.Android:
+                    if (App.EdittedAcount == true)
+                    {
+                        UpdateUserDetailsFB(App.MainUsername, App.MainFirstname, App.MainSurname, App.MainEmail, App.MainTelephone, App.MainStreet, App.MainTown, App.MainCountry, App.SquareBestScores, App.RoulleteBestScores);
+                    }
+                    else
+                    {
+                        UpdateUserDetailsFB(App.CurrentUser, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", App.SquareBestScores, App.RoulleteBestScores);
+                    }
+                     
+                    break;
+                case Device.UWP:
+                    break;
+                default:
+                    break;
+            }
+        }
 
-        /// <summary>
-        /// Delete User in Firebase
-        /// </summary>
-        /// <param name="username"></param>
-        public async void DeletUserDetailsFB(string username)
+            /// <summary>
+            /// Delete User in Firebase
+            /// </summary>
+            /// <param name="username"></param>
+            public async void DeletUserDetailsFB(string username)
         {
             ConnectToFirebase();
 
@@ -171,6 +191,8 @@ namespace PinCode
             //UserDetails userDetails = null;
             string t = "";
 
+           // await firebase.Child("Details/").DeleteAsync();
+
             //Open connection with Firebase
             ConnectToFirebase();
             String UserDetailsNode = username + "Details" + "/";
@@ -183,24 +205,25 @@ namespace PinCode
                   // UserDetailsData ud = new UserDetailsData();
                    foreach (var details in results)
                    {
+                        if (App.IsLogin == true)
+                         {
+                           App.SquareBestScores = details.Object.bestSquareScore;
+                           App.RoulleteBestScores = details.Object.bestRollutteScore;
+                         }
+
                     t = details.Object.firstname + "*" + details.Object.surname
                         + "*" + details.Object.email + "*" + details.Object.telephone + "*" + details.Object.street
                         + "*" + details.Object.town + "*" + details.Object.country + "*" + details.Object.bestRollutteScore
-                        + "*" + details.Object.bestRollutteScore + "*" + details.Object.bestSquareScore;
-                   /* userDetails = new UserDetails(
-                                details.Object.username,
-                                details.Object.firstname,
-                                details.Object.surname,
-                                details.Object.email,
-                                details.Object.telephone,
-                                details.Object.street,
-                                details.Object.town,
-                                details.Object.country,
-                                details.Object.bestRollutteScore,
-                                details.Object.bestSquareScore
-                             );*/
-    
-                   }
+                        + "*" + details.Object.bestSquareScore;
+
+                    App.MainUsername = details.Object.firstname;
+                    App.MainSurname = details.Object.surname;
+                    App.MainEmail = details.Object.email;
+                    App.MainTelephone = details.Object.telephone;
+                    App.MainStreet = details.Object.street;
+                    App.MainTown = details.Object.town;
+                    App.MainCountry = details.Object.country;
+                }
 
                 }
             catch

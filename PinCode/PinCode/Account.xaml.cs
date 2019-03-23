@@ -77,12 +77,13 @@ namespace PinCode
             }
             else
             {
-                await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK");
+                await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK","Cancel");
             }
 
             if (FoundpWord == true)
             {
-                // System.Diagnostics.Debug.WriteLine("Your are login");
+                App.IsLogin = true;
+                App.CurrentUser = username.Text;
                 Navigation.PushAsync(new MyAccount(username.Text));
             }
             if (foundUserName==true && FoundpWord == false)
@@ -131,7 +132,12 @@ namespace PinCode
                 };
 
                 await firebase.Child(node).PostAsync<Data>(data);
-
+                FirebaseDAO fb = new FirebaseDAO();
+                //Create User account with default values
+                fb.AddUserDetailsFB(username.Text, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", 0, 0);
+                App.CurrentUser = username.Text;
+                App.IsLogin = true;
+                //Go to user's page
                 Navigation.PushAsync(new MyAccount(username.Text));
             }
 

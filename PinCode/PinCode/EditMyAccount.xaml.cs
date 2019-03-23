@@ -16,6 +16,7 @@ namespace PinCode
 		{
 			InitializeComponent ();
             EditUsernamer.Text = uName;
+            App.CurrentUser= uName;
             DAO d = new DAO();
             FirebaseDAO fb = new FirebaseDAO();
 
@@ -78,6 +79,7 @@ namespace PinCode
         {
             FirebaseDAO fb = new FirebaseDAO();
             DAO d = new DAO();
+            App.EdittedAcount = true;
 
             float s = (float)Convert.ToDouble(EditSscores.Text);
             float r = (float)Convert.ToDouble(EditRScores.Text);
@@ -114,7 +116,7 @@ namespace PinCode
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
-                    fb.AddUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
+                    fb.UpdateUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
                     break;
                 case Device.UWP:
                     int cnt = d.GetUserByUserName1(EditUsernamer.Text);
