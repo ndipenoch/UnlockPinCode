@@ -123,22 +123,23 @@ namespace PinCode
 
         public void UpdateSquareScores()
         {
+            DAO d = new DAO();
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:
                     if (App.EdittedAcount == true)
                     {
                         UpdateUserDetailsFB(App.MainUsername, App.MainFirstname, App.MainSurname, App.MainEmail, App.MainTelephone, App.MainStreet, App.MainTown, App.MainCountry, App.SquareBestScores, App.RoulleteBestScores);
-                        System.Diagnostics.Debug.WriteLine("App Name :" + App.MainUsername);
                     }
                     else
                     {
                         UpdateUserDetailsFB(App.CurrentUser, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", App.SquareBestScores, App.RoulleteBestScores);
-                        System.Diagnostics.Debug.WriteLine("Current User :" + App.CurrentUser);
                     }
                      
                     break;
                 case Device.UWP:
+                    UpdateUserDetailsFB(App.MainUsername, App.MainFirstname, App.MainSurname, App.MainEmail, App.MainTelephone, App.MainStreet, App.MainTown, App.MainCountry, App.SquareBestScores, App.RoulleteBestScores);
+                    d.UpdateScoresUWP(App.MainUsername, App.SquareBestScores, App.RoulleteBestScores);
                     break;
                 default:
                     break;
@@ -269,19 +270,61 @@ namespace PinCode
                             SqliteCommand insertCommand = new SqliteCommand();
                             insertCommand.Connection = db;
 
-                            // Use parameterized query
-                            insertCommand.CommandText = "UPDATE usersDetails SET username=@Username, firstName =@FirstName, surname =@Surname, email =@Email, telephone =@Telephone,street =@Street,town =@Town, country =@Country, bestSquareScore =@BestSquareScore, bestRollutteScore =@BestRollutteScore  where username=@Username;";
-                            insertCommand.Parameters.AddWithValue("@Username", details.Object.username);
-                            insertCommand.Parameters.AddWithValue("@FirstName", details.Object.firstname);
-                            insertCommand.Parameters.AddWithValue("@Surname", details.Object.surname);
-                            insertCommand.Parameters.AddWithValue("@Email", details.Object.email);
-                            insertCommand.Parameters.AddWithValue("@Telephone", details.Object.telephone);
-                            insertCommand.Parameters.AddWithValue("@Street", details.Object.street);
-                            insertCommand.Parameters.AddWithValue("@Town", details.Object.town);
-                            insertCommand.Parameters.AddWithValue("@Country", details.Object.country);
-                            insertCommand.Parameters.AddWithValue("@BestSquareScore", details.Object.bestSquareScore);
-                            insertCommand.Parameters.AddWithValue("@BestRollutteScore", details.Object.bestRollutteScore);
-                            insertCommand.ExecuteReader();
+                            //update the main scores to appear on the score boards.
+                            if (App.IsLogin == true)
+                            {
+                                App.SquareBestScores = details.Object.bestSquareScore;
+                                App.RoulleteBestScores = details.Object.bestRollutteScore;
+                            }
+
+                            //Update the current users details
+                            App.MainUsername = username;
+                            App.MainFirstname = details.Object.firstname;
+                            App.MainSurname = details.Object.surname;
+                            App.MainEmail = details.Object.email;
+                            App.MainTelephone = details.Object.telephone;
+                            App.MainStreet = details.Object.street;
+                            App.MainTown = details.Object.town;
+                            App.MainCountry = details.Object.country;
+
+
+                            //Check if user is in local/SQLite db
+                            DAO d = new DAO();
+                            int cnt = d.GetUserByUserName1(username);
+
+                            if (cnt > 0)
+                            {
+                                //Update local db
+                                insertCommand.CommandText = "UPDATE usersDetails SET username=@Username, firstName =@FirstName, surname =@Surname, email =@Email, telephone =@Telephone,street =@Street,town =@Town, country =@Country, bestSquareScore =@BestSquareScore, bestRollutteScore =@BestRollutteScore  where username=@Username;";
+                                insertCommand.Parameters.AddWithValue("@Username", details.Object.username);
+                                insertCommand.Parameters.AddWithValue("@FirstName", details.Object.firstname);
+                                insertCommand.Parameters.AddWithValue("@Surname", details.Object.surname);
+                                insertCommand.Parameters.AddWithValue("@Email", details.Object.email);
+                                insertCommand.Parameters.AddWithValue("@Telephone", details.Object.telephone);
+                                insertCommand.Parameters.AddWithValue("@Street", details.Object.street);
+                                insertCommand.Parameters.AddWithValue("@Town", details.Object.town);
+                                insertCommand.Parameters.AddWithValue("@Country", details.Object.country);
+                                insertCommand.Parameters.AddWithValue("@BestSquareScore", details.Object.bestSquareScore);
+                                insertCommand.Parameters.AddWithValue("@BestRollutteScore", details.Object.bestRollutteScore);
+                                insertCommand.ExecuteReader();
+                            }
+                            else
+                            {
+                                // create a new row with the new user details in the local db
+                                insertCommand.CommandText = "INSERT INTO usersDetails (username,firstName,surname,email,telephone,street,town,country,bestSquareScore,bestRollutteScore) VALUES (@Username,@FirstName,@Surname,@Email,@Telephone,@Street,@Town,@Country,@BestSquareScore,@BestRollutteScore);";
+                                insertCommand.Parameters.AddWithValue("@Username", details.Object.username);
+                                insertCommand.Parameters.AddWithValue("@FirstName", details.Object.firstname);
+                                insertCommand.Parameters.AddWithValue("@Surname", details.Object.surname);
+                                insertCommand.Parameters.AddWithValue("@Email", details.Object.email);
+                                insertCommand.Parameters.AddWithValue("@Telephone", details.Object.telephone);
+                                insertCommand.Parameters.AddWithValue("@Street", details.Object.street);
+                                insertCommand.Parameters.AddWithValue("@Town", details.Object.town);
+                                insertCommand.Parameters.AddWithValue("@Country", details.Object.country);
+                                insertCommand.Parameters.AddWithValue("@BestSquareScore", details.Object.bestSquareScore);
+                                insertCommand.Parameters.AddWithValue("@BestRollutteScore", details.Object.bestRollutteScore);
+                                insertCommand.ExecuteReader();
+                            }
+                         
                         }
 
                         db.Close();

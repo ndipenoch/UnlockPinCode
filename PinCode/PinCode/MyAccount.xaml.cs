@@ -11,13 +11,13 @@ namespace PinCode
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MyAccount : ContentPage
 	{
-		public  MyAccount (string uName)
+        FirebaseDAO fb = new FirebaseDAO();
+
+        public  MyAccount (string uName)
 		{
 			InitializeComponent ();
 
             usernamer.Text =  uName;
-
-            
 
             if (fName.Text == null)
             {
@@ -55,6 +55,7 @@ namespace PinCode
                     break;
                 case Device.UWP:
                     DAO d = new DAO();
+                    fb.ReadDataFbUWP(uName);
                     try
                     {
                         UserDetails ud = d.GetUserByUserName(uName);
@@ -120,8 +121,6 @@ namespace PinCode
 
         private void DeleteBtn_Clicked(object sender, EventArgs e)
         {
-            FirebaseDAO fb = new FirebaseDAO();
-
             switch (Device.RuntimePlatform)
             {
                 case Device.Android:

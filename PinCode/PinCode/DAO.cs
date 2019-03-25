@@ -148,6 +148,43 @@ namespace PinCode
         }
 
         /// <summary>
+        /// Update SQLite if the userscores changes
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="bestSquareScore"></param>
+        /// <param name="bestRollutteScore"></param>
+        public void UpdateScoresUWP(string username, float bestSquareScore, float bestRollutteScore)
+        {
+            switch (Device.RuntimePlatform)
+            {
+                case Device.Android:
+                    break;
+                case Device.UWP:
+                    using (SqliteConnection db =
+                   new SqliteConnection("Filename=PincodeUserFile.db"))
+                    {
+                        db.Open();
+
+                        SqliteCommand insertCommand = new SqliteCommand();
+                        insertCommand.Connection = db;
+
+                        // Use parameterized query to prevent SQL injection attacks
+                        insertCommand.CommandText = "UPDATE usersDetails SET bestSquareScore =@BestSquareScore, bestRollutteScore =@BestRollutteScore  where username=@Username;";
+                        insertCommand.Parameters.AddWithValue("@Username", username);
+                        insertCommand.Parameters.AddWithValue("@BestSquareScore", bestSquareScore);
+                        insertCommand.Parameters.AddWithValue("@BestRollutteScore", bestRollutteScore);
+
+                        insertCommand.ExecuteNonQuery();
+
+                        db.Close();
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        /// <summary>
         /// Get userdetails by username from SQLite DB
         /// </summary>
         /// <param name="username"></param>
