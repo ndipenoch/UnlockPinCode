@@ -32,6 +32,11 @@
 
             <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" BackgroundColor="Orange" TextColor="Yellow"/>
 
+            <StackLayout x:Name="R_ScoreLabel" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="4"  Orientation="Horizontal" HorizontalOptions="End" IsVisible="False">
+                <Label Text="Highest Roullete Score: " TextColor="Green" />
+                <Label x:Name="best_R_Score" TextColor="Blue"/>
+            </StackLayout>
+
             <StackLayout x:Name="levelLabel"  Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="Center" >
                 <Label FontSize="Large" Text="LEVEL: " TextColor="Gold" />
                 <Label x:Name="lblAnswer" FontSize="Large" TextColor="Gold"/>
@@ -92,6 +97,12 @@
                    HeightRequest="75" WidthRequest="200" IsVisible="False"
                    Aspect="AspectFit" >
             </Image>
+
+
+            <StackLayout x:Name="WecomeMsg" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4"  Orientation="Horizontal" HorizontalOptions="Start" IsVisible="False">
+                <Label Text="Welcome " TextColor="Blue" />
+                <Label x:Name="Welcome_Msg_R" TextColor="Blue"/>
+            </StackLayout>
 
         </Grid>
 

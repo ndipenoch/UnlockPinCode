@@ -104,11 +104,9 @@ namespace PinCode
                 App.SquareBestScores = BestSquareScore;
            
                     FirebaseDAO fb = new FirebaseDAO();
-                    fb.UpdateSquareScores();
+                    fb.UpdateBoardScores();
             }
             best_score.Text = "" + App.SquareBestScores;
-            System.Diagnostics.Debug.WriteLine("Your Current score is: " + BestSquareScore);
-            System.Diagnostics.Debug.WriteLine("App score is: " + App.SquareBestScores);
         }
 
         public void SettingsLevelStage_1()

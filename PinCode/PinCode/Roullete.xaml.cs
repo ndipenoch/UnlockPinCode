@@ -34,14 +34,21 @@ namespace PinCode
         int faceValue9;
         int clickCnt = 0;
         int levelSpeed;
-     
+        float BestRoulleteScore = 0;
 
         System.Timers.Timer timer = new System.Timers.Timer();
 
         private void RoulleteBoard()
         {
+            if (App.IsLogin == true)
+            {
+                R_ScoreLabel.IsVisible = true;
+                WecomeMsg.IsVisible = true;
+            }
 
             lblAnswer.Text = " " + levelNum;
+            best_R_Score.Text = ""+App.RoulleteBestScores;
+            Welcome_Msg_R.Text = App.CurrentUser + "!";
 
             Random random = new Random();
             codeValue1 = random.Next(1, 10);
@@ -180,6 +187,18 @@ namespace PinCode
         public void NextLevel()
         {
             clickCnt++;
+            BestRoulleteScore += 10;
+
+            if (BestRoulleteScore > App.RoulleteBestScores && App.IsLogin == true)
+            {
+                App.RoulleteBestScores = BestRoulleteScore;
+
+                FirebaseDAO fb = new FirebaseDAO();
+                fb.UpdateBoardScores();
+            }
+
+            best_R_Score.Text = "" + App.RoulleteBestScores;
+
             if (clickCnt == 4)
             {
                 levelNum++;

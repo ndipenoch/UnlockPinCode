@@ -17,7 +17,7 @@
                 </StackLayout>
 
                 <StackLayout x:Name="S_ScoreLabel" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="End" IsVisible="False">
-                    <Label Text="Best Score Ever: " TextColor="Gold" />
+                    <Label Text="Highest Square Score: " TextColor="Gold" />
                     <Label x:Name="best_score" TextColor="Yellow"/>
                 </StackLayout>
 

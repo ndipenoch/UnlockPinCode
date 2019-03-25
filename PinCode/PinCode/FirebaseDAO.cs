@@ -121,7 +121,7 @@ namespace PinCode
             await firebase.Child(node).PostAsync<UserDetailsData>(userDetails);
         }
 
-        public void UpdateSquareScores()
+        public void UpdateBoardScores()
         {
             DAO d = new DAO();
             switch (Device.RuntimePlatform)
