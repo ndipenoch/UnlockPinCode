@@ -11,11 +11,19 @@ namespace PinCode
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class MyAccount : ContentPage
 	{
+      
         FirebaseDAO fb = new FirebaseDAO();
 
         public  MyAccount (string uName)
 		{
 			InitializeComponent ();
+
+            //Refresh the page to load edited data after edited once.
+            if (App.EdittedAcount == true)
+            {
+                App.EdittedAcount = false;
+                Navigation.PushAsync(new MyAccount(uName));
+            }
 
             usernamer.Text =  uName;
 

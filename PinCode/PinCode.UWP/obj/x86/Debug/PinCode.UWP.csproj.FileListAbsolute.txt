@@ -337,3 +337,8 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\e_sq
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_green.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\SQLitePCLRaw.batteries_v2.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Plugin.Connectivity.Abstractions.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Plugin.Connectivity.Abstractions.pdb
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Plugin.Connectivity.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Plugin.Connectivity.pdb
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\obj\x86\Debug\Plugin.Connectivity.pri.xml

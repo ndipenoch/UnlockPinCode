@@ -12,6 +12,7 @@ using Xamarin.Forms.Xaml;
 using Android.Widget;
 using System.Diagnostics;
 using System.Net;
+using Plugin.Connectivity;
 
 namespace PinCode
 {
@@ -27,10 +28,13 @@ namespace PinCode
         private bool foundUserName = false;
         private bool FoundpWord = false;
         private bool FoundUname = false;
+        private bool InternetConSatete;
 
         public  Account()
         {
             InitializeComponent();
+            InternetConSatete = DoIHaveInternet();
+
 
             this.firebase = new FirebaseClient(
 
@@ -45,111 +49,122 @@ namespace PinCode
         //Retrieve userdetails from Firebase
         private  async void SignIn_Clicked(object sender, EventArgs e)
         {
-            if (CheckInternetConnection() == false)
-            {
-                await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
-                Navigation.PushAsync(new MainPage());
-            }
-            foundUserName = false;
-            FoundpWord =false;
-            //check if the username is correct
-            var results = await firebase.Child(node).OnceAsync<Data>();
-            foreach (var uName in results)
-            {
-                if(username.Text== uName.Object.username)
+   
+                if (InternetConSatete == false)
                 {
-                    foundUserName = true;
-                    break;
-                }
-            }
-
-               //if username is correct check if the password is correct
-                if (foundUserName == true)
-               {
-                foreach (var pword in results)
-                {
-                    if (password.Text == pword.Object.password)
-                    {
-                        FoundpWord = true;
-                        break;
-                    }
-                }
+                    await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
+                    Navigation.PushAsync(new MainPage());
             }
             else
             {
-                await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK","Cancel");
+
+                foundUserName = false;
+                FoundpWord = false;
+                //check if the username is correct
+                var results = await firebase.Child(node).OnceAsync<Data>();
+                foreach (var uName in results)
+                {
+                    if (username.Text == uName.Object.username)
+                    {
+                        foundUserName = true;
+                        break;
+                    }
+                }
+
+                //if username is correct check if the password is correct
+                if (foundUserName == true)
+                {
+                    foreach (var pword in results)
+                    {
+                        if (password.Text == pword.Object.password)
+                        {
+                            FoundpWord = true;
+                            break;
+                        }
+                    }
+                }
+                else
+                {
+                    await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK", "Cancel");
+                }
+
+                if (FoundpWord == true)
+                {
+                    App.IsLogin = true;
+                    App.CurrentUser = username.Text;
+                    Navigation.PushAsync(new MyAccount(username.Text));
+                }
+                if (foundUserName == true && FoundpWord == false)
+                {
+                    await DisplayAlert("Incorrect Password!", "Incorrect Password!", "OK");
+                }
+
+                //Clear the entry field
+                password.Text = "";
             }
 
-            if (FoundpWord == true)
-            {
-                App.IsLogin = true;
-                App.CurrentUser = username.Text;
-                Navigation.PushAsync(new MyAccount(username.Text));
-            }
-            if (foundUserName==true && FoundpWord == false)
-            {
-                await DisplayAlert("Incorrect Password!", "Incorrect Password!", "OK");
-            }
+       
 
-            //Clear the entry field
-            password.Text = "";
 
         }
 
         //insert user's details to Firebase
         private  async void SignUp_Clicked(object sender, EventArgs e)
         {
-            if (CheckInternetConnection() == false)
+            if (InternetConSatete == false)
             {
                 await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
                 Navigation.PushAsync(new MainPage());
-            
-            }
-
-            FoundUname = false;
-            //check if the username is already used
-            var results = await firebase.Child(node).OnceAsync<Data>();
-            foreach (var uName in results)
-            {
-                if (username.Text == uName.Object.username)
-                {
-                    FoundUname = true;
-                    break;
-                }
-            }
-
-            //If username is not used create an account
-            if (FoundUname == true)
-            {
-                await DisplayAlert("Username is already used!", "Username is already used!", "OK");
             }
             else
             {
-                Data data = new Data
+                FoundUname = false;
+                //check if the username is already used
+                var results = await firebase.Child(node).OnceAsync<Data>();
+                foreach (var uName in results)
                 {
-                    username = username.Text,
-                    password = password.Text
-                };
+                    if (username.Text == uName.Object.username)
+                    {
+                        FoundUname = true;
+                        break;
+                    }
+                }
 
-                await firebase.Child(node).PostAsync<Data>(data);
-                FirebaseDAO fb = new FirebaseDAO();
-                //Create User account with default values
-                fb.AddUserDetailsFB(username.Text, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", 0, 0);
-                App.CurrentUser = username.Text;
-                App.IsLogin = true;
-                //Go to user's page
-                Navigation.PushAsync(new MyAccount(username.Text));
+                //If username is not used create an account
+                if (FoundUname == true)
+                {
+                    await DisplayAlert("Username is already used!", "Username is already used!", "OK");
+                }
+                else
+                {
+                    Data data = new Data
+                    {
+                        username = username.Text,
+                        password = password.Text
+                    };
+
+                    await firebase.Child(node).PostAsync<Data>(data);
+                    FirebaseDAO fb = new FirebaseDAO();
+                    //Create User account with default values
+                    fb.AddUserDetailsFB(username.Text, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", 0, 0);
+                    App.CurrentUser = username.Text;
+                    App.IsLogin = true;
+                    //Go to user's page
+                    Navigation.PushAsync(new MyAccount(username.Text));
+                }
+
+                username.Text = "";
+                password.Text = "";
             }
 
-            username.Text = "";
-            password.Text = "";
+            
 
         }
 
-        //check the internet connection.
-        public bool CheckInternetConnection()
+        //check the internet connection without plugin.
+       /* public bool CheckInternetConnection()
         {
-            string CheckUrl = "https://unlockpincode-d448d.firebaseio.com/";
+            string CheckUrl = "https://www.google.com/";
 
             try
             {
@@ -163,7 +178,14 @@ namespace PinCode
             {
                 return false;
             }
+        }*/
+
+        //check internet connection using a plugin
+        public bool DoIHaveInternet()
+        {
+            return CrossConnectivity.Current.IsConnected;
         }
+
 
     }
 

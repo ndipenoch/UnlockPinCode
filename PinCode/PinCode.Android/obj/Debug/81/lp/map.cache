@@ -6,6 +6,8 @@ MvvmCross.Platform
 MvvmCross.Platform.Droid
 Newtonsoft.Json
 PinCode
+Plugin.Connectivity.Abstractions
+Plugin.Connectivity
 Plugin.CurrentActivity
 Plugin.Media
 Plugin.Permissions

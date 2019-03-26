@@ -799,6 +799,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -854,6 +865,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -1891,6 +1903,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -1946,6 +1969,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -3043,6 +3067,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -3098,6 +3133,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -3949,6 +3985,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -4004,6 +4051,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -5041,6 +5089,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -5096,6 +5155,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -6193,6 +6253,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -6248,6 +6319,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -7285,6 +7357,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -7340,6 +7423,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -8437,6 +8521,17 @@
           "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.dll": {}
         }
       },
+      "Xam.Plugin.Connectivity/3.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Connectivity.dll": {}
+        }
+      },
       "Xam.Plugin.Media/4.0.1.5": {
         "type": "package",
         "dependencies": {
@@ -8492,6 +8587,7 @@
           "Microsoft.Data.Sqlite": "2.2.2",
           "SkiaSharp.Views.Forms": "1.68.0",
           "UnitsNet.Serialization.JsonNet": "4.0.0",
+          "Xam.Plugin.Connectivity": "3.2.0",
           "Xam.Plugin.Media": "4.0.1.5",
           "Xam.Plugin.SimpleAudioPlayer": "1.3.0",
           "Xamarin.Forms": "3.4.0.1009999"
@@ -14225,6 +14321,73 @@
         "lib/netstandard2.0/UnitsNet.Serialization.JsonNet.xml",
         "unitsnet.serialization.jsonnet.4.0.0.nupkg.sha512",
         "unitsnet.serialization.jsonnet.nuspec"
+      ]
+    },
+    "Xam.Plugin.Connectivity/3.2.0": {
+      "sha512": "V0IKUjLnWO4zl1VI/7Keclez5kk21PIpVUqacbMtbl1Ky7PrUNUOrO8Xmfrxn5E38ihzrmgGpuC6TXCwL3Sl+Q==",
+      "type": "package",
+      "path": "xam.plugin.connectivity/3.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Connectivity.dll",
+        "lib/MonoAndroid10/Plugin.Connectivity.pdb",
+        "lib/MonoAndroid10/Plugin.Connectivity.xml",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/UAP10/Plugin.Connectivity.Abstractions.xml",
+        "lib/UAP10/Plugin.Connectivity.XML",
+        "lib/UAP10/Plugin.Connectivity.dll",
+        "lib/UAP10/Plugin.Connectivity.pdb",
+        "lib/UAP10/Plugin.Connectivity.pri",
+        "lib/UAP10/Plugin.Connectivity/Properties/Plugin.Connectivity.rd.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.dll",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.pdb",
+        "lib/Xamarin.Mac20/Plugin.Connectivity.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
+        "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.xml",
+        "lib/XamarinTVOS/Plugin.Connectivity.dll",
+        "lib/XamarinTVOS/Plugin.Connectivity.pdb",
+        "lib/XamarinTVOS/Plugin.Connectivity.xml",
+        "lib/net45/Plugin.Connectivity.Abstractions.dll",
+        "lib/net45/Plugin.Connectivity.Abstractions.pdb",
+        "lib/net45/Plugin.Connectivity.Abstractions.xml",
+        "lib/net45/Plugin.Connectivity.XML",
+        "lib/net45/Plugin.Connectivity.dll",
+        "lib/net45/Plugin.Connectivity.pdb",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.dll",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.pdb",
+        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.xml",
+        "lib/netcoreapp2.0/Plugin.Connectivity.deps.json",
+        "lib/netcoreapp2.0/Plugin.Connectivity.dll",
+        "lib/netcoreapp2.0/Plugin.Connectivity.xml",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.xml",
+        "lib/netstandard1.0/Plugin.Connectivity.deps.json",
+        "lib/netstandard1.0/Plugin.Connectivity.dll",
+        "lib/netstandard1.0/Plugin.Connectivity.pdb",
+        "lib/netstandard1.0/Plugin.Connectivity.xml",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.dll",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.pdb",
+        "lib/tizen40/Plugin.Connectivity.Abstractions.xml",
+        "lib/tizen40/Plugin.Connectivity.deps.json",
+        "lib/tizen40/Plugin.Connectivity.dll",
+        "xam.plugin.connectivity.3.2.0.nupkg.sha512",
+        "xam.plugin.connectivity.nuspec"
       ]
     },
     "Xam.Plugin.Media/4.0.1.5": {
