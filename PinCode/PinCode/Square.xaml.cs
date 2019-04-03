@@ -44,11 +44,10 @@ namespace PinCode
         float BestSquareScore=0;
         System.Timers.Timer timer = new System.Timers.Timer();
 
-
-
         public Square()
         {
             InitializeComponent();
+            BackgroundImage = "Assets/background.png";
             SquareBoard();
         }
 

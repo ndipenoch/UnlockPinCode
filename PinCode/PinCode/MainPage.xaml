@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PinCode"
              xmlns:controls="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows.Foundation.UniversalApiContract"
-             BackgroundColor="Green"
+             BackgroundColor="Silver"
              x:Class="PinCode.MainPage">
 
     <StackLayout>
@@ -15,25 +15,24 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-
-
             <!-- add elements on the grid -->
-
+ 
             <Label Text="Welcome To Unlock Pin Code!" HorizontalOptions="Center" 
-              TextColor="Yellow" Grid.Row="0">
+              TextColor="Black" Grid.Row="0">
             </Label>
 
             <StackLayout x:Name="row1Buttons" Grid.Row="1" Margin="5" Orientation="Horizontal" HorizontalOptions="Center">
-                <Button x:Name="AccountBtn" Text="ACCOUNT"  Margin="10" Clicked="AccountBtn_Clicked" BackgroundColor="Orange" TextColor="Yellow"/>
-                <Button x:Name="feedbackBtn" Text="FEEDBACK"  Margin="10" Clicked="FeedbackBtn_Clicked" BackgroundColor="Orange" TextColor="Yellow"/>
+                <Button x:Name="AccountBtn" Text="ACCOUNT"  Margin="10" Clicked="AccountBtn_Clicked" BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
+                <Button x:Name="feedbackBtn" Text="FEEDBACK"  Margin="10" Clicked="FeedbackBtn_Clicked" BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
 
             </StackLayout>
 
             <StackLayout x:Name="soundAndGameBoard" Grid.Row="2" Margin="5" Orientation="Horizontal" HorizontalOptions="Center">
 
-                <Picker x:Name="soundPicker" Title="SOUND" VerticalOptions="StartAndExpand" Margin="10" TextColor="Yellow" BackgroundColor="Orange">
+                <Picker x:Name="soundPicker" Title="SOUND" VerticalOptions="StartAndExpand" Margin="10" TextColor="Black" BackgroundColor="Green" >
                     <Picker.Items>
                         <x:String>ON</x:String>
                         <x:String>OFF</x:String>
@@ -42,7 +41,7 @@
                 </Picker>
 
 
-                <Picker x:Name="GameBoardPicker" Title="GAMEBOARD" VerticalOptions="EndAndExpand" Margin="10" TextColor="Yellow" BackgroundColor="Orange">
+                <Picker x:Name="GameBoardPicker" Title="GAMEBOARD" VerticalOptions="EndAndExpand" Margin="10" TextColor="Black" BackgroundColor="Green">
                     <Picker.Items>
                         <x:String>ROULLETTE</x:String>
                         <x:String>SQUARE</x:String>
@@ -54,13 +53,17 @@
 
 
             <StackLayout x:Name="row1Button" Grid.Row="3" Margin="5" Orientation="Horizontal" HorizontalOptions="Center">
-                <Button x:Name="startBtn" Text="START"  Clicked="StartBtn_Clicked"  BackgroundColor="Orange" TextColor="Yellow"/>
+                <Button x:Name="startBtn" Text="START"  Clicked="StartBtn_Clicked" BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
             </StackLayout>
 
             <StackLayout x:Name="exitButton" Grid.Row="4" Margin="5" Orientation="Horizontal" HorizontalOptions="Center">
-                <Button x:Name="exitBtn" Text="EXIT"  Clicked="ExitBtn_Clicked"  BackgroundColor="Red" TextColor="Yellow"/>
-
+                <Button x:Name="exitBtn" Text="EXIT"  Clicked="ExitBtn_Clicked"  BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
             </StackLayout>
+
+
+            <Image x:Name="imgMainImage" Grid.Row="5" HorizontalOptions="Center"
+               HeightRequest="120" Source="pinpad.png" Aspect="AspectFit">
+            </Image>
 
         </Grid>
     </StackLayout>

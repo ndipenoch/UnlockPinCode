@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             BackgroundColor="#996633"
              x:Class="PinCode.Square">
 
     <ContentPage.Content>
@@ -13,7 +12,7 @@
                 </Grid.RowDefinitions>
 
                 <StackLayout x:Name="homeButtons" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="Start" >
-                    <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" BackgroundColor="Orange" TextColor="Yellow"/>
+                    <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
                 </StackLayout>
 
                 <StackLayout x:Name="S_ScoreLabel" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="End" IsVisible="False">
@@ -112,25 +111,25 @@
 
 
                 <StackLayout x:Name="row1SquareBtn" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
-                    <Button x:Name="SquareBtn1"  Clicked="SquareBtn1_Clicked" Text="1" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
-                    <Button x:Name="SquareBtn2"  Clicked="SquareBtn2_Clicked" Text="2" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="False"/>
-                    <Button x:Name="SquareBtn3"  Clicked="SquareBtn3_Clicked"  Text="3" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn1"  Clicked="SquareBtn1_Clicked" Text="1" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn2"  Clicked="SquareBtn2_Clicked" Text="2" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="False"/>
+                    <Button x:Name="SquareBtn3"  Clicked="SquareBtn3_Clicked"  Text="3" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
                 </StackLayout>
 
                 <StackLayout x:Name="row2SquareBtn" Grid.Row="1" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
-                    <Button x:Name="SquareBtn4"  Clicked="SquareBtn4_Clicked" Text="4" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
-                    <Button x:Name="SquareBtn5"  Clicked="SquareBtn5_Clicked" Text="5" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
-                    <Button x:Name="SquareBtn6"  Clicked="SquareBtn6_Clicked" Text="6" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn4"  Clicked="SquareBtn4_Clicked" Text="4" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn5"  Clicked="SquareBtn5_Clicked" Text="5" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn6"  Clicked="SquareBtn6_Clicked" Text="6" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
                 </StackLayout>
 
                 <StackLayout x:Name="row3SquareBtn" Grid.Row="2" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
-                    <Button x:Name="SquareBtn7"  Clicked="SquareBtn7_Clicked" Text="7" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
-                    <Button x:Name="SquareBtn8"  Clicked="SquareBtn8_Clicked" Text="8" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
-                    <Button x:Name="SquareBtn9"  Clicked="SquareBtn9_Clicked" Text="9" BackgroundColor="Green" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn7"  Clicked="SquareBtn7_Clicked" Text="7" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn8"  Clicked="SquareBtn8_Clicked" Text="8" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn9"  Clicked="SquareBtn9_Clicked" Text="9" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
                 </StackLayout>
 
                 <StackLayout x:Name="playBtn" Grid.Row="3" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
-                    <Button x:Name="playButton"  Text="Play" Clicked="PlayButton_Clicked"  BackgroundColor="Green" TextColor="Yellow"  WidthRequest="50" HeightRequest="50" BorderRadius="25" IsEnabled="True"/>
+                    <Button x:Name="playButton"  Text="Play" Clicked="PlayButton_Clicked"  BackgroundColor="Green" TextColor="Yellow"  WidthRequest="70" HeightRequest="70" BorderRadius="25" IsEnabled="True"/>
                 </StackLayout>
 
                 <StackLayout x:Name="imageLabel" Grid.Row="4" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
@@ -152,13 +151,14 @@
                 </StackLayout>
 
                 <StackLayout x:Name="ReplayBtn" Grid.Row="5" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
-                    <Button x:Name="ReplayButton"  Text="Restart" Clicked="ReplayButton_Clicked"   BackgroundColor="Green" TextColor="Yellow"  WidthRequest="50" HeightRequest="50"  IsVisible="False"/>
+                    <Button x:Name="ReplayButton"  Text="Restart" Clicked="ReplayButton_Clicked" Image="play.png"   WidthRequest="80" HeightRequest="80"  IsVisible="False"/>
                 </StackLayout>
 
                 <StackLayout x:Name="WecomeMsg" Grid.Row="6" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" IsVisible="False">
                     <Label Text="Welcome " TextColor="Gold" />
                     <Label x:Name="welcome_Msg" TextColor="Yellow"/>
                 </StackLayout>
+
 
             </Grid>
         </StackLayout>
