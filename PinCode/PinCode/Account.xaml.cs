@@ -34,6 +34,7 @@ namespace PinCode
         {
             InitializeComponent();
             InternetConSatete = DoIHaveInternet();
+            BackgroundImage = "Assets/background.png";
 
 
             this.firebase = new FirebaseClient(

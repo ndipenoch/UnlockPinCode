@@ -17,6 +17,7 @@ namespace PinCode
         public  MyAccount (string uName)
 		{
 			InitializeComponent ();
+            BackgroundImage = "Assets/background.png";
 
             //Refresh the page to load edited data after edited once.
             if (App.EdittedAcount == true)

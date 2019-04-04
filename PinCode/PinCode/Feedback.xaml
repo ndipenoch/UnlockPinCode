@@ -1,11 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
              x:Class="PinCode.Feedback">
     <ContentPage.Content>
 
         <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="*"/>
+
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start"  Grid.Row="0" Grid.Column="0" BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
+
+            <StackLayout x:Name="Name" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Horizontal">
+                <Label Text="Name           :" TextColor="Khaki" />
+                <Entry x:Name="EditName" TextColor="Blue" Placeholder="First Name" WidthRequest="400"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Email" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Horizontal">
+                <Label Text="Email            :" TextColor="Khaki" />
+                <Entry x:Name="EditEmail" TextColor="Blue" Placeholder="Email" WidthRequest="400"/>
+            </StackLayout>
+
+            <StackLayout x:Name="Telephone" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                <Label Text="Telephone     : " TextColor="Khaki" />
+                <Entry x:Name="EditTel" TextColor="Blue" Placeholder="Telephone" Keyboard="Numeric" WidthRequest="400"/>
+            </StackLayout>
+
+            <StackLayout x:Name="comments" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
+                <Label Text="comments     : " TextColor="Khaki" />
+                <Entry x:Name="Ecomments" TextColor="Blue" Placeholder="Commets..." WidthRequest="400"/>
+            </StackLayout>
+
+            <Button x:Name="BtnSend" Text="SEND" Clicked="BtnSend_Clicked"  Grid.Row="5" HorizontalOptions="Center" BackgroundColor="Green" Grid.Column="1" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
 
         </Grid>
     </ContentPage.Content>

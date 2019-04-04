@@ -90,7 +90,7 @@
 
 
             <skia:SKCanvasView x:Name="canvasView" PaintSurface="CanvasView_PaintSurface" Grid.Row="3" Grid.Column="2" Grid.RowSpan="5" Grid.ColumnSpan="4"/>
-            <Button x:Name="pressButton" Grid.Row="8"  Text="PRESS" Clicked="PressButton_Clicked" Grid.Column="4" Grid.ColumnSpan="3"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" BackgroundColor="Green" TextColor="Yellow"  WidthRequest="50" HeightRequest="50" BorderRadius="25" IsEnabled="True"/>
+            <Button x:Name="pressButton" Grid.Row="8"  Text="PRESS" Clicked="PressButton_Clicked" Grid.Column="4" Grid.ColumnSpan="3"  HorizontalOptions="CenterAndExpand"  BackgroundColor="Green" TextColor="Yellow"  WidthRequest="100" HeightRequest="100" BorderRadius="25" IsEnabled="True"/>
             <Button x:Name="ReplayButton" Grid.Row="8"  Text="Replay" Clicked="ReplayButton_Clicked" Grid.Column="1" Grid.ColumnSpan="2"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" BackgroundColor="Green" TextColor="Yellow"  WidthRequest="50" HeightRequest="50" BorderRadius="25" IsVisible="False"/>
 
             <Image x:Name="championship" Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="4"

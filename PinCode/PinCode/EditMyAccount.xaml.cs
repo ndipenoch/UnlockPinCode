@@ -15,6 +15,7 @@ namespace PinCode
 		public  EditMyAccount (string uName)
 		{
 			InitializeComponent ();
+            BackgroundImage = "Assets/background.png";
             EditUsernamer.Text = uName;
             App.CurrentUser= uName;
             DAO d = new DAO();

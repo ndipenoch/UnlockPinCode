@@ -27,57 +27,57 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start"  Grid.Row="0" Grid.Column="0" BackgroundColor="Orange" TextColor="Yellow" CornerRadius="7"/>
+            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start"  Grid.Row="0" Grid.Column="0" BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
 
             <Label x:Name="EditUsernamer" HorizontalOptions="End"  Grid.Row="0" Grid.Column="2" FontSize="Medium" TextColor="Yellow"/>
 
 
             <StackLayout x:Name="roulleteScores" Grid.Row="1" Grid.Column="2"  Orientation="Horizontal">
-                <Label Text="Roullete: " TextColor="Black" />
-                <Label x:Name="EditSscores" TextColor="Blue"/>
+                <Label Text="Roullete: " TextColor="Khaki" />
+                <Label x:Name="EditSscores" TextColor="White"/>
             </StackLayout>
 
             <StackLayout x:Name="SquareScores" Grid.Row="2" Grid.Column="2"  Orientation="Horizontal">
-                <Label Text="Square: " TextColor="Black" />
-                <Label x:Name="EditRScores" TextColor="Blue"/>
+                <Label Text="Square: " TextColor="Khaki" />
+                <Label x:Name="EditRScores" TextColor="White"/>
             </StackLayout>
             
             <StackLayout x:Name="FirstName" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Horizontal">
-                <Label Text="Firstname: " TextColor="Black" />
+                <Label Text="Firstname: " TextColor="Khaki" />
                 <Entry x:Name="EditName" TextColor="Blue" Placeholder="First Name" WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout x:Name="SurName" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
-                <Label Text="Surname : " TextColor="Black" />
+                <Label Text="Surname : " TextColor="Khaki" />
                 <Entry x:Name="EditSurname" TextColor="Blue" Placeholder="Surname" WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout x:Name="Email" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"  Orientation="Horizontal">
-                <Label Text="Email      : " TextColor="Black" />
+                <Label Text="Email      : " TextColor="Khaki" />
                 <Entry x:Name="EditEmail" TextColor="Blue" Placeholder="Email" WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout x:Name="Telephone" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
-                <Label Text="Telephone:  " TextColor="Black" />
+                <Label Text="Telephone:  " TextColor="Khaki" />
                 <Entry x:Name="EditTel" TextColor="Blue" Placeholder="Telephone" Keyboard="Numeric" WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout x:Name="Street" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
-                <Label Text="Street     : " TextColor="Black" />
+                <Label Text="Street     : " TextColor="Khaki" />
                 <Entry x:Name="EditStreet" TextColor="Blue" Placeholder="Street" WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout x:Name="Town" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
-                <Label Text="Town       :" TextColor="Black" />
+                <Label Text="Town       :" TextColor="Khaki" />
                 <Entry x:Name="EditTown" TextColor="Blue" Placeholder="Town" WidthRequest="150"/>
             </StackLayout>
 
             <StackLayout x:Name="Country" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal">
-                <Label Text="Country    : " TextColor="Black" />
+                <Label Text="Country    : " TextColor="Khaki" />
                 <Entry x:Name="EditCountry" TextColor="Blue" Placeholder="Country" WidthRequest="150"/>
             </StackLayout>
 
-            <Button x:Name="SaveBtn" Text="SAVE" Clicked="SaveBtn_Clicked"  Grid.Row="8" Grid.Column="1" BackgroundColor="Green" TextColor="Yellow" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
+            <Button x:Name="SaveBtn" Text="SAVE" Clicked="SaveBtn_Clicked"  Grid.Row="8" Grid.Column="1" BackgroundColor="Green" TextColor="Black" WidthRequest="120" HeightRequest="60" CornerRadius="7"/>
 
         </Grid>
     </Grid>
