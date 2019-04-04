@@ -16,12 +16,12 @@
         
         <StackLayout x:Name="uname"  Margin="2" Grid.Row="0" >
             <Label TextColor="Khaki" Text="Username: " />
-            <Entry x:Name="username"  Placeholder="Username" />
+            <Entry x:Name="username"  Placeholder="Username" BackgroundColor="White" TextColor="Black" />
         </StackLayout>
 
         <StackLayout x:Name="pword" Grid.Row="1" Margin="2"  >
             <Label TextColor="Khaki" Text="Password: " />
-            <Entry x:Name="password"  Placeholder="Password" IsPassword="True"/>
+            <Entry x:Name="password"  Placeholder="Password" IsPassword="True" BackgroundColor="White" TextColor="Black"/>
         </StackLayout>
 
         <StackLayout x:Name="signInBtn" Grid.Row="2" Margin="2" >

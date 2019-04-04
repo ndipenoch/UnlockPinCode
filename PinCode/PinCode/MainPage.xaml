@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:PinCode"
-             xmlns:controls="clr-namespace:Windows.UI.Xaml.Controls;assembly=Windows.Foundation.UniversalApiContract"
              BackgroundColor="Silver"
              x:Class="PinCode.MainPage">
 
@@ -21,7 +20,7 @@
             <!-- add elements on the grid -->
  
             <Label Text="Welcome To Unlock Pin Code!" HorizontalOptions="Center" 
-              TextColor="Black" Grid.Row="0">
+              TextColor="Green" Grid.Row="0">
             </Label>
 
             <StackLayout x:Name="row1Buttons" Grid.Row="1" Margin="5" Orientation="Horizontal" HorizontalOptions="Center">
@@ -62,7 +61,7 @@
 
 
             <Image x:Name="imgMainImage" Grid.Row="5" HorizontalOptions="Center"
-               HeightRequest="120" Source="pinpad.png" Aspect="AspectFit">
+               HeightRequest="120" Source="Assets/pinpad.png" Aspect="AspectFit">
             </Image>
 
         </Grid>

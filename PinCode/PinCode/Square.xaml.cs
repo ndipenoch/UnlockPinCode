@@ -156,7 +156,7 @@ namespace PinCode
             good2.IsVisible = false;
             good3.IsVisible = false;
             good4.IsVisible = false;
-            nextLevel.IsVisible = true;
+           //nextLevel.IsVisible = true;
             timer.Stop();
             SquareBoard();
             InitTimer();
