@@ -11,8 +11,8 @@
   <uses-feature android:name="android.hardware.camera" android:required="false" />
   <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
   <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
-  <application android:label="PinCode.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="PinCode" android:theme="@style/MainTheme" android:name="md5a8657415a39a063ce8530be32fc40c0a.MainActivity">
+  <application android:label="PinCode.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/mylogo" android:debuggable="true">
+    <activity android:configChanges="orientation|screenSize" android:icon="@drawable/mylogo" android:label="PinCode" android:theme="@style/MainTheme" android:name="md5a8657415a39a063ce8530be32fc40c0a.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

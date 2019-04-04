@@ -131,8 +131,11 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\r
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable\background1.png
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable\pinpad.png
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable\play.png
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\bin\Debug\netstandard2.0\PinCode.dll
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\PinCode.dll.mdb
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable\mylogo.png
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable-hdpi\mylogo.png
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable-xhdpi\mylogo.png
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable-xxhdpi\mylogo.png
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable-xxxhdpi\mylogo.png
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\linksrc\MvvmCross.Platform.dll.mdb
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\linksrc\PinCode.dll.mdb
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb
