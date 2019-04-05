@@ -105,14 +105,11 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		/* We need to ensure that "PinCode.Android.dll" comes first in this list. */
-		"PinCode.Android.dll",
+		/* We need to ensure that "UnlockPincode.dll" comes first in this list. */
+		"UnlockPincode.dll",
 		"Firebase.dll",
 		"FormsViewGroup.dll",
-		"LiteDB.dll",
 		"Microsoft.Data.Sqlite.dll",
-		"MvvmCross.Platform.dll",
-		"MvvmCross.Platform.Droid.dll",
 		"Newtonsoft.Json.dll",
 		"PinCode.dll",
 		"Plugin.Connectivity.Abstractions.dll",
@@ -125,16 +122,8 @@ class MonoPackageManager_Resources {
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
 		"SkiaSharp.Views.Forms.dll",
-		"SQLitePCLRaw.batteries_green.dll",
-		"SQLitePCLRaw.batteries_v2.dll",
 		"SQLitePCLRaw.core.dll",
-		"SQLitePCLRaw.lib.e_sqlite3.dll",
 		"SQLitePCLRaw.provider.e_sqlite3.dll",
-		"System.Reactive.dll",
-		"Teddy.MvvmCross.Plugins.SimpleAudioPlayer.dll",
-		"Teddy.MvvmCross.Plugins.SimpleAudioPlayer.Droid.dll",
-		"UnitsNet.dll",
-		"UnitsNet.Serialization.JsonNet.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Runtime.dll",

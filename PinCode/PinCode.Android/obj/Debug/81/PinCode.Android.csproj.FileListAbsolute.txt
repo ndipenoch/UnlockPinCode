@@ -1,7 +1,5 @@
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\PinCode.Android.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\PinCode.Android.pdb
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\com.companyname.apk
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\com.companyname-Signed.apk
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\PinCode.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\PinCode.pdb
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\PinCode.dll.mdb
@@ -13,9 +11,6 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\r
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\PinCode.Android.csproj.CoreCompileInputs.cache
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\XamlC.stamp
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\PinCode.Android.csproj.CopyComplete
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\PinCode.Android.dll
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\PinCode.Android.pdb
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\bin\com.companyname.apk
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\layout\tabbar.xml
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\layout\toolbar.xml
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\values\styles.xml
@@ -136,6 +131,16 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\r
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable-xhdpi\mylogo.png
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable-xxhdpi\mylogo.png
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\res\drawable-xxxhdpi\mylogo.png
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\UnlockPincode.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\UnlockPincode.pdb
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\com.mcndipenoch.apk
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\com.mcndipenoch-Signed.apk
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\UnlockPincode.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\UnlockPincode.pdb
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\android\bin\com.mcndipenoch.apk
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\bin\Debug\netstandard2.0\PinCode.dll
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\linksrc\UnlockPincode.pdb
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\bin\Debug\PinCode.dll.mdb
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\linksrc\MvvmCross.Platform.dll.mdb
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\linksrc\PinCode.dll.mdb
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.Android\obj\Debug\81\linksrc\Plugin.Connectivity.dll.mdb

@@ -30,7 +30,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" BackgroundColor="Orange" TextColor="Yellow"/>
+            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" BackgroundColor="Green" TextColor="Black"/>
 
             <StackLayout x:Name="R_ScoreLabel" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="4"  Orientation="Horizontal" HorizontalOptions="End" IsVisible="False">
                 <Label Text="Highest Roullete Score: " TextColor="Green" />
