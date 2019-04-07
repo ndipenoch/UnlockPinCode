@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</Source>
+    <SmallTileSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</SmallTileSource>
+    <MediumTileSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</MediumTileSource>
+    <WideTileSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</WideTileSource>
+    <LargeTileSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</LargeTileSource>
+    <AppIconSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</AppIconSource>
+    <SplashScreenSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</SplashScreenSource>
+    <BadgeLogoSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</BadgeLogoSource>
+    <PackageLogoSource>C:\Users\Duane Mills\Desktop\3rd year\Mobile App Dev 2\Images\mylogo.png</PackageLogoSource>
+  </PropertyGroup>
+</Project>
