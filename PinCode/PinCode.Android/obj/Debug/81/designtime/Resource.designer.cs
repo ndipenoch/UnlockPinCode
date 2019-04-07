@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("PinCode.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("UnlockPincode.Resource", IsApplication=true)]
 
-namespace PinCode.Droid
+namespace UnlockPincode
 {
 	
 	
@@ -26,7 +26,7 @@ namespace PinCode.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::PinCode.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::UnlockPincode.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation

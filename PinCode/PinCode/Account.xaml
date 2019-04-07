@@ -14,6 +14,7 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
+
         <StackLayout x:Name="uname"  Margin="2" Grid.Row="0" >
             <Label TextColor="Khaki" Text="Username: " />
             <Entry x:Name="username"  Placeholder="Username" BackgroundColor="White" TextColor="Black" />
@@ -31,6 +32,9 @@
         <StackLayout x:Name="signUpBtn" Grid.Row="3" Margin="2" >
             <Button x:Name="signUp"  Clicked="SignUp_Clicked" Text="Sign up" BackgroundColor="Green" TextColor="Black" FontSize="Large" WidthRequest="150" HeightRequest="60" CornerRadius="7"/>
         </StackLayout>
+
+        <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Center"  Grid.Row="4"  BackgroundColor="Green" TextColor="Black" CornerRadius="7" HeightRequest="60"/>
+
 
 
     </Grid>

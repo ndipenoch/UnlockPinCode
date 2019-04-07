@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>FAA160643A8DCB5A67541244775FB9EB936E6F8B623D39E0E8B082E0D1659914</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>01B3370CF2EF4118FC605F6C8CAEB6B9322012C3EAC1E15899FAFC438A168912</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>f9a98f3e-15b2-4712-be76-901c5ffe710a_1.0.0.0_x86__ne21ka0s38hye</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>f9a98f3e-15b2-4712-be76-901c5ffe710a_ne21ka0s38hye!App</RegisteredUserModeAppID>
     <RegisteredPackageID>f9a98f3e-15b2-4712-be76-901c5ffe710a</RegisteredPackageID>
@@ -30,13 +30,13 @@
     <AppXManifest Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-04T17:58:44.705</Modified>
+      <Modified>2019-04-07T07:44:01.106</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\PinCode.UWP.exe">
       <PackagePath>entrypoint\PinCode.UWP.exe</PackagePath>
-      <Modified>2019-04-04T17:58:39.680</Modified>
+      <Modified>2019-04-07T07:43:46.558</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\firebasedatabase.net\4.0.1\lib\netstandard2.0\Firebase.dll">
       <PackagePath>Firebase.dll</PackagePath>
@@ -812,7 +812,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\bin\Debug\netstandard2.0\PinCode.dll">
       <PackagePath>PinCode.dll</PackagePath>
-      <Modified>2019-04-04T17:58:15.080</Modified>
+      <Modified>2019-04-04T22:12:36.080</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -979,11 +979,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-04T17:58:39.079</Modified>
+      <Modified>2019-04-07T07:43:45.567</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-04-04T17:58:39.083</Modified>
+      <Modified>2019-04-07T07:43:45.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -995,11 +995,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-04-04T10:35:55.830</Modified>
+      <Modified>2019-04-07T07:43:54.603</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\PinCode.UWP.exe">
       <PackagePath>PinCode.UWP.exe</PackagePath>
-      <Modified>2019-04-04T17:58:44.684</Modified>
+      <Modified>2019-04-07T07:44:01.066</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

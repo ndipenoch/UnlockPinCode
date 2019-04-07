@@ -51,62 +51,68 @@ namespace PinCode
         private  async void SignIn_Clicked(object sender, EventArgs e)
         {
    
-                if (InternetConSatete == false)
-                {
-                    await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
-                    Navigation.PushAsync(new MainPage());
-            }
+             if (InternetConSatete == false)
+             {
+               await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
+               Navigation.PushAsync(new MainPage());
+             }
             else
             {
-
-                foundUserName = false;
-                FoundpWord = false;
-                //check if the username is correct
-                var results = await firebase.Child(node).OnceAsync<Data>();
-                foreach (var uName in results)
+                if ((username.Text != null) && (username.Text.Length != 0) && (password.Text != null) && (password.Text.Length != 0))
                 {
-                    if (username.Text == uName.Object.username)
+                    foundUserName = false;
+                    FoundpWord = false;
+                    //check if the username is correct
+                    var results = await firebase.Child(node).OnceAsync<Data>();
+                    foreach (var uName in results)
                     {
-                        foundUserName = true;
-                        break;
-                    }
-                }
-
-                //if username is correct check if the password is correct
-                if (foundUserName == true)
-                {
-                    foreach (var pword in results)
-                    {
-                        if (password.Text == pword.Object.password)
+                        if (username.Text == uName.Object.username)
                         {
-                            FoundpWord = true;
+                            foundUserName = true;
                             break;
                         }
                     }
+
+                    //if username is correct check if the password is correct
+                    if (foundUserName == true)
+                    {
+                        foreach (var pword in results)
+                        {
+                            if (password.Text == pword.Object.password)
+                            {
+                                FoundpWord = true;
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK", "Cancel");
+                        Navigation.PushAsync(new Account());
+                    }
+
+                    if (FoundpWord == true)
+                    {
+                        App.IsLogin = true;
+                        App.CurrentUser = username.Text;
+                        Navigation.PushAsync(new MyAccount(username.Text));
+                    }
+                    if (foundUserName == true && FoundpWord == false)
+                    {
+                        await DisplayAlert("Incorrect Password!", "Incorrect Password!", "OK");
+                        Navigation.PushAsync(new Account());
+                    }
+
+                    //Clear the entry field
+                    password.Text = "";
+
                 }
                 else
                 {
-                    await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK", "Cancel");
+                    await DisplayAlert("Warning!", "username and password fields must be filled!", "OK");
+                    Navigation.PushAsync(new Account());
                 }
-
-                if (FoundpWord == true)
-                {
-                    App.IsLogin = true;
-                    App.CurrentUser = username.Text;
-                    Navigation.PushAsync(new MyAccount(username.Text));
-                }
-                if (foundUserName == true && FoundpWord == false)
-                {
-                    await DisplayAlert("Incorrect Password!", "Incorrect Password!", "OK");
-                }
-
-                //Clear the entry field
-                password.Text = "";
             }
-
-       
-
-
         }
 
         //insert user's details to Firebase
@@ -119,67 +125,61 @@ namespace PinCode
             }
             else
             {
-                FoundUname = false;
-                //check if the username is already used
-                var results = await firebase.Child(node).OnceAsync<Data>();
-                foreach (var uName in results)
+                if ((username.Text != null) && (username.Text.Length != 0) && (password.Text != null) && (password.Text.Length != 0))
                 {
-                    if (username.Text == uName.Object.username)
+                    FoundUname = false;
+                    //check if the username is already used
+                    var results = await firebase.Child(node).OnceAsync<Data>();
+                    foreach (var uName in results)
                     {
-                        FoundUname = true;
-                        break;
+                        if (username.Text == uName.Object.username)
+                        {
+                            FoundUname = true;
+                            break;
+                        }
                     }
-                }
 
-                //If username is not used create an account
-                if (FoundUname == true)
-                {
-                    await DisplayAlert("Username is already used!", "Username is already used!", "OK");
+                    //If username is not used create an account
+                    if (FoundUname == true)
+                    {
+                        await DisplayAlert("Username is already used!", "Username is already used!", "OK");
+                    }
+                    else
+                    {
+                        Data data = new Data
+                        {
+                            username = username.Text,
+                            password = password.Text
+                        };
+
+                        await firebase.Child(node).PostAsync<Data>(data);
+                        FirebaseDAO fb = new FirebaseDAO();
+                        //Create User account with default values
+                        fb.AddUserDetailsFB(username.Text, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", 0, 0);
+                        App.CurrentUser = username.Text;
+                        App.IsLogin = true;
+                        //Go to user's page
+                        Navigation.PushAsync(new MyAccount(username.Text));
+                    }
+
+                    username.Text = "";
+                    password.Text = "";
                 }
                 else
                 {
-                    Data data = new Data
-                    {
-                        username = username.Text,
-                        password = password.Text
-                    };
-
-                    await firebase.Child(node).PostAsync<Data>(data);
-                    FirebaseDAO fb = new FirebaseDAO();
-                    //Create User account with default values
-                    fb.AddUserDetailsFB(username.Text, "FirstName", "Surname", "Email", "Tellphone", "Street", "Town", "Country", 0, 0);
-                    App.CurrentUser = username.Text;
-                    App.IsLogin = true;
-                    //Go to user's page
-                    Navigation.PushAsync(new MyAccount(username.Text));
+                    await DisplayAlert("Warning!", "username and password fields must be filled!", "OK");
+                    Navigation.PushAsync(new Account());
                 }
-
-                username.Text = "";
-                password.Text = "";
+                  
             }
-
-            
 
         }
 
-        //check the internet connection without plugin.
-       /* public bool CheckInternetConnection()
+        //Go to home page.
+        private void HomeBtn_Clicked(object sender, EventArgs e)
         {
-            string CheckUrl = "https://www.google.com/";
-
-            try
-            {
-                HttpWebRequest iNetRequest = (HttpWebRequest)WebRequest.Create(CheckUrl);
-                iNetRequest.Timeout = 5000;
-                WebResponse iNetResponse = iNetRequest.GetResponse();
-                iNetResponse.Close();
-                return true;
-            }
-            catch (WebException ex)
-            {
-                return false;
-            }
-        }*/
+            Navigation.PushAsync(new MainPage());
+        }
 
         //check internet connection using a plugin
         public bool DoIHaveInternet()
@@ -187,8 +187,25 @@ namespace PinCode
             return CrossConnectivity.Current.IsConnected;
         }
 
+        //check the internet connection without plugin.
+        /* public bool CheckInternetConnection()
+         {
+             string CheckUrl = "https://www.google.com/";
+
+             try
+             {
+                 HttpWebRequest iNetRequest = (HttpWebRequest)WebRequest.Create(CheckUrl);
+                 iNetRequest.Timeout = 5000;
+                 WebResponse iNetResponse = iNetRequest.GetResponse();
+                 iNetResponse.Close();
+                 return true;
+             }
+             catch (WebException ex)
+             {
+                 return false;
+             }
+         }*/
 
     }
 
- 
 }
