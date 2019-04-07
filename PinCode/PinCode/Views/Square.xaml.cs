@@ -51,6 +51,7 @@ namespace PinCode
             SquareBoard();
         }
 
+        //Iniertilize variable when the game starts
         private void SquareBoard()
         {
             if (App.IsLogin == true)
@@ -62,7 +63,7 @@ namespace PinCode
                 best_score.Text = "" + App.SquareBestScores;
                 welcome_Msg.Text = App.CurrentUser + "!";
 
-
+            //Generate 4 random numbers and assigned facevalues to them
             Random random = new Random();
             codeValue1 = random.Next(1, 10);
             codeValue2 = random.Next(1, 10);
@@ -75,7 +76,9 @@ namespace PinCode
             lblcode4.Text = "   " + codeValue4;
         }
 
-
+        /// <summary>
+        /// Check and call the appropriate level
+        /// </summary>
         public void MoveToNextLevle()
         {
             if (clickCnt == 5 && levelNum == 1)
@@ -97,7 +100,7 @@ namespace PinCode
                 ReplayButton.IsVisible = true;
 
             }
-
+            //Write scores to firebase and display score to user if they are login.
             if (BestSquareScore > App.SquareBestScores && App.IsLogin==true)
             {
                 App.SquareBestScores = BestSquareScore;
@@ -108,6 +111,7 @@ namespace PinCode
             best_score.Text = "" + App.SquareBestScores;
         }
 
+        //check for each level initialize the variables and increment the click count and scores.
         public void SettingsLevelStage_1()
         {
             allIsGood.IsVisible = true;
@@ -144,6 +148,7 @@ namespace PinCode
  
         }
 
+        //Initilaize the variable each time you start a new level and increment the level number count
         public void NextLevelSettings()
         {
             levelNum++;
@@ -163,7 +168,7 @@ namespace PinCode
             clickCnt = 1;
         }
 
-
+        //set an await time after every failure before restarting the game
         public void FailAndRestart()
         {
             timer.AutoReset = false;
@@ -172,6 +177,7 @@ namespace PinCode
             timer.Start();
         }
 
+        //set a time
         public void FailSleepTime(object sender, EventArgs e)
         {
             Device.BeginInvokeOnMainThread(() => {
@@ -181,6 +187,7 @@ namespace PinCode
 
         }
 
+        //set the speed/time on which the numbers appears for each level
         public void InitTimer()
         {
 
@@ -207,19 +214,24 @@ namespace PinCode
 
         }
 
+        //Enable the 9 buttons 1 after the other depending random value generated from 1-9.
         private void ButtonsEnable(object sender, EventArgs e)
         {
             Device.BeginInvokeOnMainThread(() => {
                 allIsGood.IsVisible = false;
-                nextLevel.IsVisible = false;
+               // nextLevel.IsVisible = false;
             });
 
+            //Generate a random number from 1-9 to enable the button.
             Random rnd = new Random();
             rndBtnNum = rnd.Next(1, 10);
 
+            
             switch (rndBtnNum)
             {
                 case 1:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn1 = rndom.Next(1, 10);
@@ -250,6 +262,8 @@ namespace PinCode
 
                     break;
                 case 2:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn2 = rndom.Next(1, 10);
@@ -279,6 +293,8 @@ namespace PinCode
                     });
                     break;
                 case 3:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn3 = rndom.Next(1, 10);
@@ -308,6 +324,8 @@ namespace PinCode
                     });
                     break;
                 case 4:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn4 = rndom.Next(1, 10);
@@ -337,6 +355,8 @@ namespace PinCode
                     });
                     break;
                 case 5:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn5 = rndom.Next(1, 10);
@@ -366,6 +386,8 @@ namespace PinCode
                     });
                     break;
                 case 6:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn6 = rndom.Next(1, 10);
@@ -395,6 +417,8 @@ namespace PinCode
                     });
                     break;
                 case 7:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn7 = rndom.Next(1, 10);
@@ -424,6 +448,8 @@ namespace PinCode
                     });
                     break;
                 case 8:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn8 = rndom.Next(1, 10);
@@ -453,6 +479,8 @@ namespace PinCode
                     });
                     break;
                 case 9:
+                    //Generate another random number from 1-9 and display 
+                    //it on the buttons per speed time/level speed time.
                     Device.BeginInvokeOnMainThread(() => {
                         Random rndom = new Random();
                         rdnSquareBtn9 = rndom.Next(1, 10);
@@ -490,6 +518,13 @@ namespace PinCode
             Navigation.PushAsync(new MainPage());
         }
 
+        /// <summary>
+        /// For each click on square button 1
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn1_Clicked(object sender, EventArgs e)
         {
             //Convert.ToInt32(SquareBtn1.Text)
@@ -533,6 +568,13 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+        /// <summary>
+        /// For each click on square button 2
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn2_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn2 == codeValue1 && clickCnt == 1)
@@ -575,6 +617,13 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+        /// <summary>
+        /// For each click on square button 3
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn3_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn3 == codeValue1 && clickCnt == 1)
@@ -617,6 +666,14 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+
+        /// <summary>
+        /// For each click on square button 4
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn4_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn4 == codeValue1 && clickCnt == 1)
@@ -659,6 +716,13 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+        /// <summary>
+        /// For each click on square button 5
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn5_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn5 == codeValue1 && clickCnt == 1)
@@ -701,6 +765,13 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+        /// <summary>
+        /// For each click on square button 6
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn6_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn6 == codeValue1 && clickCnt == 1)
@@ -743,6 +814,14 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+
+        /// <summary>
+        /// For each click on square button 7
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn7_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn7 == codeValue1 && clickCnt == 1)
@@ -785,6 +864,13 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+        /// <summary>
+        /// For each click on square button 8
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn8_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn8 == codeValue1 && clickCnt == 1)
@@ -827,6 +913,13 @@ namespace PinCode
             MoveToNextLevle();
         }
 
+        /// <summary>
+        /// For each click on square button 9
+        /// Check if the users got it right,or wrong if the button was enable
+        /// apply the correct settings
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SquareBtn9_Clicked(object sender, EventArgs e)
         {
             if (rdnSquareBtn9 == codeValue1 && clickCnt == 1)
@@ -923,7 +1016,6 @@ namespace PinCode
             championship.Source = ImageSource.FromResource(winnerImage, winner);
 
             InitTimer();
-
 
         }
 

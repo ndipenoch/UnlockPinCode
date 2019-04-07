@@ -50,6 +50,7 @@ namespace PinCode
             best_R_Score.Text = ""+App.RoulleteBestScores;
             Welcome_Msg_R.Text = App.CurrentUser + "!";
 
+            //Generate random numbsers and assigned them to face values
             Random random = new Random();
             codeValue1 = random.Next(1, 10);
             codeValue2 = random.Next(1, 10);
@@ -81,6 +82,7 @@ namespace PinCode
             }
         }
 
+        //Time or speed on which the numbers appear on the screen
         public void SleepTime()
         {
             timer.AutoReset = false;
@@ -141,6 +143,7 @@ namespace PinCode
             championship.Source = ImageSource.FromResource(winnerImage, winner);
         }
 
+        //Canvas attributes.
         SKPaint blackfillpain = new SKPaint
         {
             Style = SKPaintStyle.Fill,
@@ -148,6 +151,7 @@ namespace PinCode
             
         };
 
+        //Draw the arm or stroke in the canvas
         SKPaint GreenStroke = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
@@ -158,6 +162,7 @@ namespace PinCode
 
         };
 
+        //style the Text in the canvas
         SKPaint RedStroke = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
@@ -176,6 +181,7 @@ namespace PinCode
             DefaultSettings();
             RoulleteBoard();
 
+            //Set the time on the Canvas to be re-drawn every second
             Device.StartTimer(TimeSpan.FromSeconds(1f/60), () =>
              {
                  canvasView.InvalidateSurface();
@@ -184,11 +190,13 @@ namespace PinCode
 
         }
 
+        //Calculate clickCnt, scores and internizilate parameters as you move to a higher level
         public void NextLevel()
         {
             clickCnt++;
             BestRoulleteScore += 10;
 
+            //Update the scores in Firebase
             if (BestRoulleteScore > App.RoulleteBestScores && App.IsLogin == true)
             {
                 App.RoulleteBestScores = BestRoulleteScore;
@@ -217,6 +225,7 @@ namespace PinCode
             }
         }
 
+        //Draw the Canvas
         private void CanvasView_PaintSurface(object sender, SKPaintSurfaceEventArgs e)
         {
             
@@ -234,9 +243,7 @@ namespace PinCode
             //current Time
             DateTime dateTime = DateTime.Now;
 
-            //draw Circle
-           // canvas.DrawCircle(0, 0, 100, blackfillpain);
-
+            //Write Text to the Canvas
             canvas.DrawText("1", 0, -90, RedStroke);
             canvas.DrawText("2", 60, -60, RedStroke);
             canvas.DrawText("6", -60, 65, RedStroke);
@@ -247,12 +254,9 @@ namespace PinCode
             canvas.DrawText("7", -90, 30, RedStroke);
             canvas.DrawText("8", -90, 0, RedStroke);
 
-         
-
-            //moving arm
+            //moving the arm and increase the speed by a variable cnt
             canvas.Save();
             cnt= cnt+levelSpeed;
-           // seconds = dateTime.AddMilliseconds(500); /*+ dateTime.Millisecond / 1000f*/;
             canvas.RotateDegrees(cnt);
             if (cnt >= 360)
             {
@@ -273,7 +277,6 @@ namespace PinCode
             if (cnt >= 0 && cnt <= 20)
             {
                 faceValue1 = 1;
-                
             }
             else if (cnt >= 30 && cnt <= 60)
             {
@@ -290,7 +293,6 @@ namespace PinCode
             else if (cnt >= 170 && cnt <= 185)
             {
                 faceValue5 = 5;
-               // System.Diagnostics.Debug.WriteLine("faceValue5 : " + faceValue5);
             }
             else if (cnt >= 215 && cnt <= 239)
             {
@@ -308,8 +310,8 @@ namespace PinCode
             {
                 faceValue9 = 9;
             }
-
-           // System.Diagnostics.Debug.WriteLine("Face value eight : " + faceValue8);
+            
+            //Give the stroke a lenght and restore the canvas
             GreenStroke.StrokeWidth = 2;
             canvas.DrawLine(0, 10, 0, -80, GreenStroke);
             canvas.Restore();
@@ -321,6 +323,11 @@ namespace PinCode
             Navigation.PushAsync(new MainPage());
         }
 
+        /// <summary>
+        /// Keep record of each click on the press button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PressButton_Clicked(object sender, EventArgs e)
         {
             //increase presscont

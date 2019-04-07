@@ -63,6 +63,7 @@ namespace PinCode
                     ReadFbAdroid();
                     break;
                 case Device.UWP:
+                    //read from SQLite and display user info
                     DAO d = new DAO();
                     fb.ReadDataFbUWP(uName);
                     try
@@ -87,12 +88,10 @@ namespace PinCode
                 default:
                     break;
             }
-
-            MyAccountSettings();
-
             
             async void ReadFbAdroid()
             {
+                //Read from Firebase and display user info
                 FirebaseDAO fb = new FirebaseDAO();
                 string result = await fb.ReadDataFbAndroid(uName);
                 if (result != "")
@@ -109,12 +108,6 @@ namespace PinCode
                     Sscores.Text = splitString[8];
                 }
             }
-
-        }
-
-       
-        private void MyAccountSettings()
-        {
 
         }
 

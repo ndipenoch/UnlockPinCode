@@ -55,7 +55,7 @@ namespace PinCode
         }
 
         /// <summary>
-        /// Read user details from Firebase
+        /// Read user details from Firebase and display it to user
         /// </summary>
         async void ReadFbAdroid()
         {
@@ -76,6 +76,11 @@ namespace PinCode
             }
         }
 
+        /// <summary>
+        /// Update and save information
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SaveBtn_Clicked(object sender, EventArgs e)
         {
             FirebaseDAO fb = new FirebaseDAO();
@@ -85,6 +90,7 @@ namespace PinCode
             float s = (float)Convert.ToDouble(EditSscores.Text);
             float r = (float)Convert.ToDouble(EditRScores.Text);
 
+            //Display default info if fields are empty.
             if (EditName.Text == null)
             {
                 EditName.Text = "First name";
@@ -120,6 +126,7 @@ namespace PinCode
                     fb.UpdateUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
                     break;
                 case Device.UWP:
+                    //Update SQLite if it is already in the database, existing user
                     int cnt = d.GetUserByUserName1(EditUsernamer.Text);
                     if (cnt>0)
                      {
@@ -128,6 +135,7 @@ namespace PinCode
                     }
                      else
                      {
+                        //Add new info to SQLite DB if it is a first timer or new user.
                         d.AddUserDetails(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
                         fb.AddUserDetailsFB(EditUsernamer.Text, EditName.Text, EditSurname.Text, EditEmail.Text, EditTel.Text, EditStreet.Text, EditTown.Text, EditCountry.Text, s, r);
                     }

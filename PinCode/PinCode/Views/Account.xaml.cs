@@ -36,7 +36,6 @@ namespace PinCode
             InternetConSatete = DoIHaveInternet();
             BackgroundImage = "Assets/background.png";
 
-
             this.firebase = new FirebaseClient(
 
                 databaseUrl,
@@ -47,17 +46,22 @@ namespace PinCode
 
         }
 
-        //Retrieve userdetails from Firebase
+        /// <summary>
+        /// //Retrieve userdetails from Firebase for signing in
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void SignIn_Clicked(object sender, EventArgs e)
         {
 
             if (InternetConSatete == false)
             {
-                await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
+                await DisplayAlert("WARNING!", "No Internet Connection!", "OK");
                 Navigation.PushAsync(new MainPage());
             }
             else
             {
+                //Check if username and password fields are not empty
                 if ((username.Text != null) && (username.Text.Length != 0) && (password.Text != null) && (password.Text.Length != 0))
                 {
                     foundUserName = false;
@@ -87,7 +91,7 @@ namespace PinCode
                     }
                     else
                     {
-                        await DisplayAlert("Incoorect Username", "Incorrect Username!", "OK", "Cancel");
+                        await DisplayAlert("WARNING", "Incorrect Username!", "OK", "Cancel");
                         Navigation.PushAsync(new Account());
                     }
 
@@ -99,7 +103,7 @@ namespace PinCode
                     }
                     if (foundUserName == true && FoundpWord == false)
                     {
-                        await DisplayAlert("Incorrect Password!", "Incorrect Password!", "OK");
+                        await DisplayAlert("WARNING!", "Incorrect Password!", "OK");
                         Navigation.PushAsync(new Account());
                     }
 
@@ -115,16 +119,21 @@ namespace PinCode
             }
         }
 
-        //insert user's details to Firebase
+        /// <summary>
+        /// //insert user's details to Firebase
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void SignUp_Clicked(object sender, EventArgs e)
         {
             if (InternetConSatete == false)
             {
-                await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
+                await DisplayAlert("WARNING!", "No Internet Connection!", "OK");
                 Navigation.PushAsync(new MainPage());
             }
             else
             {
+                //Check if the username and password fields are not empty.
                 if ((username.Text != null) && (username.Text.Length != 0) && (password.Text != null) && (password.Text.Length != 0))
                 {
                     FoundUname = false;
@@ -139,10 +148,10 @@ namespace PinCode
                         }
                     }
 
-                    //If username is not used create an account
+                    //If username is used display an error message
                     if (FoundUname == true)
                     {
-                        await DisplayAlert("Username is already used!", "Username is already used!", "OK");
+                        await DisplayAlert("WARNING!", "Username is already used!", "OK");
                     }
                     else
                     {
@@ -167,7 +176,7 @@ namespace PinCode
                 }
                 else
                 {
-                    await DisplayAlert("Warning!", "username and password fields must be filled!", "OK");
+                    await DisplayAlert("WARNING!", "username and password fields must be filled!", "OK");
                     Navigation.PushAsync(new Account());
                 }
 

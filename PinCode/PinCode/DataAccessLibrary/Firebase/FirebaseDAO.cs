@@ -122,6 +122,10 @@ namespace PinCode
             await firebase.Child(node).PostAsync<UserDetailsData>(userDetails);
         }
 
+
+        /// <summary>
+        /// Update the score board if the scores change
+        /// </summary>
         public void UpdateBoardScores()
         {
             DAO d = new DAO();
@@ -189,13 +193,15 @@ namespace PinCode
 
         }
 
-       // public  UserDetails GetUserByUserName(String username)
+        /// <summary>
+        /// Get user details from Firebase
+        /// </summary>
+        /// <param name="username"></param>
+        /// <returns></returns>
         public async Task<String> ReadDataFbAndroid(String username)
         {
             //UserDetails userDetails = null;
             string t = "";
-
-           // await firebase.Child("Details/").DeleteAsync();
 
             //Open connection with Firebase
             ConnectToFirebase();

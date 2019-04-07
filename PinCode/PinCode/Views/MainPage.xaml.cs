@@ -25,12 +25,6 @@ namespace PinCode
             DAO d = new DAO();
             d.InitializeDatabase();
             BackgroundImage = "Assets/background1.png";
-            //d.AddUserDetails("mark", "Marco", "Ndip", "jimmy@gmail.com", "000000", "29 Forser Place", "LA", "USA", 200,50);
-            // d.AddUserDetails("james", "James", "Ndip", "jimmy@gmail.com", "000000", "29 Forser Place", "NY", "USA", 400, 260);
-            //d.UpdateUserDetails("mark","James","Ndip","jimmy@gmail.com","000000","29 Forser Place","LA", "USA", 200);
-            //d.AddUserDetails("markavella", "mark", "Ndip", "jimmy@gmail.com", "000000", "29 Forser Place", "NY", "USA", 1000);
-            //d.DeleteUserAccount("marko");
-            // d.DeleteUserAccount("markavella");
             SetDefaultSettings();
         }
 
@@ -45,7 +39,7 @@ namespace PinCode
             var player = Plugin.SimpleAudioPlayer.CrossSimpleAudioPlayer.Current;
             player.Load(audioStream);
 
-            //turn on the background sound
+            //turn on/off the background sound
             var soundOnOff = soundPicker.SelectedIndex;
             {
                 player.Play();
@@ -76,19 +70,19 @@ namespace PinCode
 
         private void AccountBtn_Clicked(object sender, EventArgs e)
         {
-            //open the new page
+            //Go to Account page
              Navigation.PushAsync(new Account());
         }
 
         private void FeedbackBtn_Clicked(object sender, EventArgs e)
         {
-            //open the new page
+            //Go to Feedback page
             Navigation.PushAsync(new Feedback());
         }
 
         private void StartBtn_Clicked(object sender, EventArgs e)
         {
-            //open the new page
+          
             var gameBoardType = GameBoardPicker.SelectedIndex;
             if (gameBoardType == 0)
             {
@@ -102,7 +96,7 @@ namespace PinCode
                 playSimpleSound(); 
         }
 
-
+        //Exit Application.
         private void ExitBtn_Clicked(object sender, EventArgs e)
         {
             System.Environment.Exit(1);

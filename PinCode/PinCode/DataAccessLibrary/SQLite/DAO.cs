@@ -276,7 +276,7 @@ namespace PinCode
         }
 
         /// <summary>
-        /// Delete user account fromSQLite DB
+        /// Delete user account from SQLite DB
         /// </summary>
         /// <param name="username"></param>
         /// <returns></returns>

@@ -42,8 +42,6 @@ namespace PinCode
 		{
 			InitializeComponent ();
             BackgroundImage = "Assets/background.png";
-
-
         }
 
         private void HomeBtn_Clicked(object sender, EventArgs e)
@@ -98,7 +96,6 @@ namespace PinCode
         /// </summary>
         public void RefreshView()
         {
-
             EditName.Text = "";
             EditEmail.Text = "";
             EditTel.Text = "";
