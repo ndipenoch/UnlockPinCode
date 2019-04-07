@@ -51,22 +51,22 @@
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Account.xaml">
+    <EmbeddedResource Update="Views\Account.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="EditMyAccount.xaml">
+    <EmbeddedResource Update="Views\EditMyAccount.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Feedback.xaml">
+    <EmbeddedResource Update="Views\Feedback.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MyAccount.xaml">
+    <EmbeddedResource Update="Views\MyAccount.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Roullete.xaml">
+    <EmbeddedResource Update="Views\Roullete.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Square.xaml">
+    <EmbeddedResource Update="Views\Square.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

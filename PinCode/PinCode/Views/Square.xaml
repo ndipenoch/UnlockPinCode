@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PinCode.Square">
+
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout x:Name="homeButtons" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="Start" >
+                    <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" BackgroundColor="Green" TextColor="Black" CornerRadius="7"/>
+                </StackLayout>
+
+                <StackLayout x:Name="S_ScoreLabel" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="End" IsVisible="False">
+                    <Label Text="Highest Square Score: " TextColor="Gold" />
+                    <Label x:Name="best_score" TextColor="Yellow"/>
+                </StackLayout>
+
+            </Grid>
+
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout x:Name="levelLabel" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Label Text="LEVEL: " TextColor="Gold" />
+                    <Label x:Name="lblAnswer" TextColor="Yellow"/>
+                </StackLayout>
+
+            </Grid>
+
+            <Grid HorizontalOptions="Center" VerticalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="bad1" Grid.Row="0" Grid.Column="5" 
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+                <Image x:Name="bad2" Grid.Row="0" Grid.Column="6"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+                <Image x:Name="bad3" Grid.Row="0" Grid.Column="7"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+                <Image x:Name="bad4" Grid.Row="0" Grid.Column="8"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+
+
+                <Image x:Name="good1" Grid.Row="0" Grid.Column="5" 
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+                <Image x:Name="good2" Grid.Row="0" Grid.Column="6"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+                <Image x:Name="good3" Grid.Row="0" Grid.Column="7"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+                <Image x:Name="good4" Grid.Row="0" Grid.Column="8"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+                </Image>
+
+                <Label x:Name="lblcode1" FontSize="Large" Grid.Row="0" Grid.Column="5" HorizontalOptions="Center" TextColor="Gold" />
+                <Label x:Name="lblcode2" FontSize="Large" Grid.Row="0" Grid.Column="6" HorizontalOptions="Center" TextColor="Gold" />
+                <Label x:Name="lblcode3" FontSize="Large" Grid.Row="0" Grid.Column="7" HorizontalOptions="Center" TextColor="Gold" />
+                <Label x:Name="lblcode4" FontSize="Large" Grid.Row="0" Grid.Column="8" HorizontalOptions="Center" TextColor="Gold" />
+
+            </Grid>
+
+            <Grid x:Name="grdSquareContent1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+
+                <StackLayout x:Name="row1SquareBtn" Grid.Row="0" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Button x:Name="SquareBtn1"  Clicked="SquareBtn1_Clicked" Text="1" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn2"  Clicked="SquareBtn2_Clicked" Text="2" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="False"/>
+                    <Button x:Name="SquareBtn3"  Clicked="SquareBtn3_Clicked"  Text="3" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                </StackLayout>
+
+                <StackLayout x:Name="row2SquareBtn" Grid.Row="1" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Button x:Name="SquareBtn4"  Clicked="SquareBtn4_Clicked" Text="4" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn5"  Clicked="SquareBtn5_Clicked" Text="5" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn6"  Clicked="SquareBtn6_Clicked" Text="6" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                </StackLayout>
+
+                <StackLayout x:Name="row3SquareBtn" Grid.Row="2" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Button x:Name="SquareBtn7"  Clicked="SquareBtn7_Clicked" Text="7" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn8"  Clicked="SquareBtn8_Clicked" Text="8" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                    <Button x:Name="SquareBtn9"  Clicked="SquareBtn9_Clicked" Text="9" BackgroundColor="Green" CornerRadius="7" TextColor="Yellow" FontSize="Large" WidthRequest="60" HeightRequest="60" IsEnabled="false"/>
+                </StackLayout>
+
+                <StackLayout x:Name="playBtn" Grid.Row="3" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Button x:Name="playButton"  Text="Play" Clicked="PlayButton_Clicked"  BackgroundColor="Green" TextColor="Yellow"  WidthRequest="70" HeightRequest="70" BorderRadius="25" IsEnabled="True"/>
+                </StackLayout>
+
+                <StackLayout x:Name="imageLabel" Grid.Row="4" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Image x:Name="allIsGood" 
+                   HeightRequest="50" WidthRequest="50" IsVisible="False"
+                   Aspect="AspectFit" >
+                    </Image>
+
+                    <Image x:Name="nextLevel" 
+                   HeightRequest="100" WidthRequest="100" IsVisible="False"
+                   Aspect="AspectFit" >
+                    </Image>
+
+                    <Image x:Name="championship" 
+                   HeightRequest="75" WidthRequest="200" IsVisible="False"
+                   Aspect="AspectFit" >
+                    </Image>
+
+                </StackLayout>
+
+                <StackLayout x:Name="ReplayBtn" Grid.Row="5" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" >
+                    <Button x:Name="ReplayButton"  Text="Restart" Clicked="ReplayButton_Clicked" Image="play.png"   WidthRequest="80" HeightRequest="80"  IsVisible="False"/>
+                </StackLayout>
+
+                <StackLayout x:Name="WecomeMsg" Grid.Row="6" Margin="5"  Orientation="Horizontal" HorizontalOptions="Center" IsVisible="False">
+                    <Label Text="Welcome " TextColor="Gold" />
+                    <Label x:Name="welcome_Msg" TextColor="Yellow"/>
+                </StackLayout>
+
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

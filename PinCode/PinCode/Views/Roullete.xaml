@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:skia="clr-namespace:SkiaSharp.Views.Forms;assembly=SkiaSharp.Views.Forms"
+             BackgroundColor="Silver"
+             x:Class="PinCode.Roullete">
+    <Grid>
+
+        <Grid HorizontalOptions="Center" VerticalOptions="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="HomeBtn" Text="HOME" Clicked="HomeBtn_Clicked" HorizontalOptions="Start" Grid.ColumnSpan="3" Grid.Row="0" Grid.Column="0" BackgroundColor="Green" TextColor="Black"/>
+
+            <StackLayout x:Name="R_ScoreLabel" Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="4"  Orientation="Horizontal" HorizontalOptions="End" IsVisible="False">
+                <Label Text="Highest Roullete Score: " TextColor="Green" />
+                <Label x:Name="best_R_Score" TextColor="Blue"/>
+            </StackLayout>
+
+            <StackLayout x:Name="levelLabel"  Grid.Row="1" Grid.Column="3" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalOptions="Center" >
+                <Label FontSize="Large" Text="LEVEL: " TextColor="Gold" />
+                <Label x:Name="lblAnswer" FontSize="Large" TextColor="Gold"/>
+            </StackLayout>
+
+            <Image x:Name="hi" Grid.Row="2" Grid.Column="0"
+                   HeightRequest="40" WidthRequest="40" IsVisible="True"
+                   Aspect="AspectFit" >
+            </Image>
+            
+            <Image x:Name="bad1" Grid.Row="2" Grid.Column="2" 
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+            <Image x:Name="bad2" Grid.Row="2" Grid.Column="3"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+            <Image x:Name="bad3" Grid.Row="2" Grid.Column="4"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+            <Image x:Name="bad4" Grid.Row="2" Grid.Column="5"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+
+
+            <Image x:Name="good1" Grid.Row="2" Grid.Column="2" 
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+            <Image x:Name="good2" Grid.Row="2" Grid.Column="3"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+            <Image x:Name="good3" Grid.Row="2" Grid.Column="4"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+            <Image x:Name="good4" Grid.Row="2" Grid.Column="5"
+                   HeightRequest="40" WidthRequest="40" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+            
+            <Label x:Name="lblcode1" FontSize="Large" Grid.Row="2" Grid.Column="2" HorizontalOptions="Center" TextColor="Gold" />
+            <Label x:Name="lblcode2" FontSize="Large" Grid.Row="2" Grid.Column="3" HorizontalOptions="Center" TextColor="Gold" />
+            <Label x:Name="lblcode3" FontSize="Large" Grid.Row="2" Grid.Column="4" HorizontalOptions="Center" TextColor="Gold" />
+            <Label x:Name="lblcode4" FontSize="Large" Grid.Row="2" Grid.Column="5" HorizontalOptions="Center" TextColor="Gold" />
+
+
+
+            <skia:SKCanvasView x:Name="canvasView" PaintSurface="CanvasView_PaintSurface" Grid.Row="3" Grid.Column="2" Grid.RowSpan="5" Grid.ColumnSpan="4"/>
+            <Button x:Name="pressButton" Grid.Row="8"  Text="PRESS" Clicked="PressButton_Clicked" Grid.Column="4" Grid.ColumnSpan="3"  HorizontalOptions="CenterAndExpand"  BackgroundColor="Green" TextColor="Yellow"  WidthRequest="100" HeightRequest="100" BorderRadius="25" IsEnabled="True"/>
+            <Button x:Name="ReplayButton" Grid.Row="8"  Text="Replay" Clicked="ReplayButton_Clicked" Grid.Column="1" Grid.ColumnSpan="2"  HorizontalOptions="CenterAndExpand" VerticalOptions="End" BackgroundColor="Green" TextColor="Yellow"  WidthRequest="50" HeightRequest="50" BorderRadius="25" IsVisible="False"/>
+
+            <Image x:Name="championship" Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="4"
+                   HeightRequest="75" WidthRequest="200" IsVisible="False"
+                   Aspect="AspectFit" >
+            </Image>
+
+
+            <StackLayout x:Name="WecomeMsg" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="4"  Orientation="Horizontal" HorizontalOptions="Start" IsVisible="False">
+                <Label Text="Welcome " TextColor="Blue" />
+                <Label x:Name="Welcome_Msg_R" TextColor="Blue"/>
+            </StackLayout>
+
+        </Grid>
+
+    </Grid>
+            
+
+</ContentPage>
