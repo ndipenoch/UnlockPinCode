@@ -53,8 +53,16 @@ namespace PinCode
             }
             if (soundOnOff == 1)
             {
-                var memStream = new MemoryStream();
-                player.Stop(); 
+                try
+                {
+                    var memStream = new MemoryStream();
+                    player.Stop();
+                }
+                catch
+                {
+
+                }
+                
                 
             }
         }

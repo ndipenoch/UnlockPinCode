@@ -18,8 +18,8 @@ namespace PinCode
 {
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Account : ContentPage
-	{
+    public partial class Account : ContentPage
+    {
 
         private const String databaseUrl = "https://unlockpincode-d448d.firebaseio.com/";
         private const String databaseSecret = "gOjxFlBGP1v8vufauNkO9VqnH5PiEwltVATNdUey";
@@ -30,7 +30,7 @@ namespace PinCode
         private bool FoundUname = false;
         private bool InternetConSatete;
 
-        public  Account()
+        public Account()
         {
             InitializeComponent();
             InternetConSatete = DoIHaveInternet();
@@ -48,14 +48,14 @@ namespace PinCode
         }
 
         //Retrieve userdetails from Firebase
-        private  async void SignIn_Clicked(object sender, EventArgs e)
+        private async void SignIn_Clicked(object sender, EventArgs e)
         {
-   
-             if (InternetConSatete == false)
-             {
-               await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
-               Navigation.PushAsync(new MainPage());
-             }
+
+            if (InternetConSatete == false)
+            {
+                await DisplayAlert("No Internet Connection!", "No Internet Connection!", "OK");
+                Navigation.PushAsync(new MainPage());
+            }
             else
             {
                 if ((username.Text != null) && (username.Text.Length != 0) && (password.Text != null) && (password.Text.Length != 0))
@@ -116,7 +116,7 @@ namespace PinCode
         }
 
         //insert user's details to Firebase
-        private  async void SignUp_Clicked(object sender, EventArgs e)
+        private async void SignUp_Clicked(object sender, EventArgs e)
         {
             if (InternetConSatete == false)
             {
@@ -170,7 +170,7 @@ namespace PinCode
                     await DisplayAlert("Warning!", "username and password fields must be filled!", "OK");
                     Navigation.PushAsync(new Account());
                 }
-                  
+
             }
 
         }

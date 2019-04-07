@@ -342,3 +342,4 @@ C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Plug
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Plugin.Connectivity.dll
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Plugin.Connectivity.pdb
 C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\obj\x86\Debug\Plugin.Connectivity.pri.xml
+C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\obj\x86\Debug\Square.xaml.g.cs

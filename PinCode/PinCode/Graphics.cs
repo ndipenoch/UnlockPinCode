@@ -1,6 +1,10 @@
-﻿namespace PinCode
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace PinCode
 {
-    internal class Graphics
+    class Graphics
     {
     }
 }
