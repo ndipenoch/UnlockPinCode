@@ -21,13 +21,14 @@ Availibility to the public:
 	   Developer's name: mcndipenoch
 	   
 	   
-	   The app is a puzzle game the has a homepage,2 game boards(Square and Roulette), an account page, edit account page and a feedback page.
+The app is a puzzle game the has a homepage,2 game boards(Square and Roulette), an account page, edit account page and a feedback page.
 The homepage has a a link to the account page, and feedback page, users can choose from the drop down list to turn the background sound on/off using Xam.Plugin.SimpleAudioPlayer plugin.
 Also, users can choose from a drop down list to game board they which to play on, either square or Roulette.
 The homepage also have an exit button, to exit the application gracefully.
+![](screenshots/Homepage.JPG)
 
 You can play the game with or without having an account.
-The advantage of having an account is that if you have an account you highest score ever for both games are saved.
+The advantage of having an account is that if you have an account your highest score ever for both games are saved.
 Each time you sign in, on the game board your highest score ever for that game will be displayed and will be update instantly if you get a higher score
 and a welcome message with your user name will be displayed on the game board.
 If you try to sign in or sign up with wrong user's details an appropriate error message will be displayed.
@@ -37,6 +38,7 @@ If you are on a PC or Laptops(UWP platform), you details are also stored locally
 SQLite is used on UWP platforms, because they are likely going to be more than one user on a PC or laptops, so SQL query is better to differentiate the accounts.
 Firebase is use, so users can login on any device and retrieve their details including highest scores, even if the device is used by several account holders.
 Each user can see just their own score or details.
+![](screenshots/Account.JPG)
 
 The Roulette game board is constructed on a canvas using SkiaSharp.Views.Forms.
 At the top left is a HOME button to go back to the home page and at the left will be the highest score ever if the user signs in.
@@ -58,7 +60,7 @@ If you get it wrong, a red "X" will appear on the number, to indicate you fail a
 For each level if you get all 4 numbers right, you will move to the next level and the speed of the rotating stroke will be faster than the previous level.
 You will progress to the next level automatically after you get the 4th number right.
 So, it will be challenging harder as you move to a higher level.
-
+![](screenshots/Roullete.JPG)
 
 The Square game board.
 At the top left is a HOME button to go back to the home page and at the left will be the highest score ever if the user signs in.
@@ -79,23 +81,25 @@ For each level if you get all 4 numbers right, you will move to the next level a
 and more than one square can be enable at a time. Thus making the game challenging and harder as you move to a higher level.
 If you click a button that is not enable not happens.
 If you finish level 4, a congratulation image and a replay button will be displayed below the 9 squares.
+![](screenshots/Square.JPG)
 
 My Account Page.
 If you successfully sign in or sign up you are taken to MyAccount page.
 If you are a first time user or you haven't changed your default information, default values are given to you account.
 Here you can edit, log out and delete your account, with the respective buttons as indicated below the page.
 If you delete you account, you details are deleted on the device, Firebase and SQLite for UWP users.
+![](screenshots/MyAccount.JPG)
 
 Edit Page.
 Here you can edit you details and click on the SAVE buttons to update your details on the device, Firebase and SQLite for UWP users.
+![](screenshots/EditAccount.JPG)
 
 Feedback Page.
 Here users can send to me their taught about the game and I will retrieve the message from the backend (Firebase).
 Users, can contact me if they will like to retrieve their password and I will email it to them.
 If users click on the button SUBMIT and either the name or comment fields are empty an alert message will be displayed to the screen to tell them these
 fields are mandatory.
- 
+![](screenshots/Feedback.JPG)
 
 
 
-  
