@@ -9,12 +9,13 @@ Technologies or plugins used:
 	  Xam.Plugin.SimpleAudioPlayer     Version   1.3.0.  Used to play sounds.
 	  
 Availibility to the public:
+
            Play Store:
 	   Link: https://play.google.com/store/apps/details?id=com.mcndipenoch
 	   App Name:Unlock Pin Code
 	   Developer's name: com.mcndipenoch
 	   
-	   Windows Store:
+	        Windows Store:
 	   Link: https://www.microsoft.com/store/productId/9P6D3KHXB9FT
 	   App Nmae: Unlock PinCode
 	   Developer's name: mcndipenoch
