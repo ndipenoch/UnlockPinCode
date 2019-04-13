@@ -14626,11 +14626,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode.UWP\\PinCode.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode.UWP\\PinCode.UWP.csproj",
       "projectName": "PinCode.UWP",
-      "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode.UWP\\PinCode.UWP.csproj",
+      "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode.UWP\\PinCode.UWP.csproj",
       "packagesPath": "C:\\Users\\Duane Mills\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode.UWP\\obj\\",
+      "outputPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -14650,8 +14650,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode\\PinCode.csproj": {
-              "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode\\PinCode.csproj"
+            "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode\\PinCode.csproj": {
+              "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode\\PinCode.csproj"
             }
           }
         }

@@ -1967,11 +1967,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode.Android\\PinCode.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode.Android\\PinCode.Android.csproj",
       "projectName": "PinCode.Android",
-      "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode.Android\\PinCode.Android.csproj",
+      "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode.Android\\PinCode.Android.csproj",
       "packagesPath": "C:\\Users\\Duane Mills\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode.Android\\obj\\",
+      "outputPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1988,8 +1988,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode\\PinCode.csproj": {
-              "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode\\PinCode.csproj"
+            "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode\\PinCode.csproj": {
+              "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode\\PinCode.csproj"
             }
           }
         }

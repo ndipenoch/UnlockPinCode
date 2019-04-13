@@ -1,1 +1,1 @@
-C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\PinCode.UWP.csproj;x86
+C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\PinCode.UWP.csproj;x86

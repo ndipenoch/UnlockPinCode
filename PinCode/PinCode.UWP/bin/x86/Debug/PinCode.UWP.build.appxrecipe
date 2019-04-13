@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>ec0cc741-fd3e-485c-81be-68815c480690</PackageIdentityName>
     <PackageIdentityPublisher>CN=4a89a778-1a47-4a77-b25a-61f8d503c87a</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\PinCode.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\PinCode.UWP.exe">
       <PackagePath>entrypoint\PinCode.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\firebasedatabase.net\4.0.1\lib\netstandard2.0\Firebase.dll">
@@ -607,234 +607,234 @@
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\xamarin.forms\3.4.0.1008975\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode\bin\Debug\netstandard2.0\PinCode.dll">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode\bin\Debug\netstandard2.0\PinCode.dll">
       <PackagePath>PinCode.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\background.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\background.png">
       <PackagePath>Assets\background.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\background1.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\background1.png">
       <PackagePath>Assets\background1.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-125.png">
       <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-150.png">
       <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-200.png">
       <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\pinpad.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\pinpad.png">
       <PackagePath>Assets\pinpad.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\play.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\play.png">
       <PackagePath>Assets\play.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\PinCode.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\PinCode.UWP.xr.xml">
       <PackagePath>PinCode.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
@@ -843,10 +843,10 @@
     <AppxPackagedFile Include="C:\Users\Duane Mills\.nuget\packages\xamarin.forms\3.4.0.1008975\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\PinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\PinCode.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\Duane Mills\source\repos\UnlockPinCode\PinCode\PinCode.UWP\bin\x86\Debug\Core\PinCode.UWP.exe">
       <PackagePath>PinCode.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

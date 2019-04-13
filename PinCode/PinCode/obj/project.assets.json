@@ -1753,11 +1753,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode\\PinCode.csproj",
+      "projectUniqueName": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode\\PinCode.csproj",
       "projectName": "PinCode",
-      "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode\\PinCode.csproj",
+      "projectPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode\\PinCode.csproj",
       "packagesPath": "C:\\Users\\Duane Mills\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Duane Mills\\source\\repos\\PinCode\\PinCode\\PinCode\\obj\\",
+      "outputPath": "C:\\Users\\Duane Mills\\source\\repos\\UnlockPinCode\\PinCode\\PinCode\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
