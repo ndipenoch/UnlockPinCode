@@ -1,5 +1,6 @@
 Technologies or plug-ins used:
-      FirebaseDatabase.net    Version 4.0.1.    Used to connect to Firebase database server.
+
+          FirebaseDatabase.net    Version 4.0.1.    Used to connect to Firebase database server.
 	  Microsoft.Data.Sqlite   Version  2.2.2.   Used to connect to SQLite database.
 	  Microsoft.NETCore.UniversalWindowsPlatform    Version   6.1.5.
 	  NETStandard.Library   Version      2.0.3.
