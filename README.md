@@ -46,12 +46,12 @@ This score will be updated instantly if the user get a higher score.
 Just below the home button and the middle of the page is a LEVEL label and the current game level number.
 Just below the LEVEL label  are 4 numbers generated randomly from 1-9 for each level.
 Just below the random numbers are numbers 1-9 in a circle and a rotating stroke starting from the center moving clockwise, the stroke always start from zero.
-The numbers and stroke and drawn on a canvas using SkiaSharp.Views.Forms.
+The numbers and stroke(arm) are drawn on a canvas using SkiaSharp.Views.Forms.
 Just below the canvas at the right is a PRESS button and at the left will be a welcome message with you user name if you are login.
 If you finish level 4, a congratulation image and a replay button will be displayed below the canvas.
-As the stroke rotates you have to click on the PRESS button when it is on the right number(one of the 4 randomly generated numbers).
+As the stroke(arm) rotates you have to click on the PRESS button when it is on the right number(one of the 4 randomly generated numbers).
 The 4 random numbers are in order from left to right, you can click on the same number  more than one time if the number appears 2 or more times consecutively.
-say 2 2, and the stroke is on 2, you can double click 2.
+say 2 2, and the stroke(arm) is on 2, you can double click 2.
 The order of the number must be maintain.
 For each click, you either get it right or wrong.
 If you get it right, a green tick will appear on the number to indicate you got it right and you can move to the next number and then to the next level after the 4th number.
@@ -100,6 +100,11 @@ Users, can contact me if they will like to retrieve their password and I will em
 If users click on the button SUBMIT and either the name or comment fields are empty an alert message will be displayed to the screen to tell them these
 fields are mandatory.
 ![](screenshots/Feedback.JPG)
+![](screenshots/NoInternet.JPG)
+![](screenshots/UserPwError.JPG)
+![](screenshots/UseAlredayUse.JPG)
+![](screenshots/CommentError.JPG)
+![](screenshots/SuccSendCom.JPG)
 
 
 
